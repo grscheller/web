@@ -1,15 +1,9 @@
-### My GitHub  Pages Websites:
+# GRScheller Software Development Blog
 
-*[grscheller.datastructures](https://grscheller.github.io/datastructures/)
-*[grscheller.web](https://grscheller.github.io/web/)
-
-### My PyPI Repositories:
-
-*[grscheller.datastructures](https://pypi.org/project/grscheller.datastructures/)
-
-### My GITHUB Repositories:
+#### My GITHUB Repositories:
 
 * [datastructures](https://github.com/grscheller/datastructures)
+* [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
 * [neovim-notes](https://github.com/grscheller/neovim-notes)
 * [dotfiles](https://github.com/grscheller/dotfiles)
   * [nvim](https://github.com/grscheller/nvim)
@@ -18,7 +12,26 @@
   * [sway-env](https://github.com/grscheller/sway-env)
 * [web](https://github.com/grscheller/web)
 * [scheller-linux-archive](https://github.com/grscheller/scheller-linux-archive)
-* [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
+
+#### My PyPI Repositories:
+
+* [grscheller.datastructures](https://pypi.org/project/grscheller.datastructures/)
+
+#### My GitHub Pages Websites:
+
+* [GRScheller Personal Links](https://grscheller.github.io/web/homepage.html)
+* [GRScheller Spftware Development Blog](https://grscheller.github.io/web/blog.html)
+
+### Moved blog to new home \[2023-21-21\]:
+
+Moved this blog from the scheller-linux-archive wiki to the GitHub Pages
+site associated with the grscheller/web repo. This new repo is where
+I have started keeping my software deveopment related web content. It
+made more sense making it part of the associated GitHub page than making
+it part of the repo's wiki.
+
+I will continue to main the blog in Markdown, but I will be using Pandoc
+to convert it to HTML. 
 
 ### New GitHub repo for fpinscala \[2023-07-04\]:
 
