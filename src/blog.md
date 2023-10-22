@@ -33,7 +33,7 @@ making it a part of the repo's wiki.
 
 I will continue maintaining the blog in Markdown, but am using Pandoc to
 convert it to HTML. The best thing now is that I can maintain the
-Markdown using Nwovim.
+Markdown using Neovim.
 
 ### New GitHub repo for fpinscala \[2023-07-04\]:
 
@@ -326,11 +326,12 @@ happen, typed Device Manager into the Start Menu. Lo and behold, good
 old Device Manager launched. With an "!" point on the icon for the
 NVIDIA card. Drilling down on the icon I discover an error message:
 
-```
-   Windows cannot verify the digital signature for the drivers
-   required for this device. A recent hardware or software change
-   might have installed a file that is signed incorrectly or damaged,
-   or that might be malicious software from an unknown source. (Code 52)
+```text
+    Windows cannot verify the digital signature for the drivers
+required for this device. A recent hardware or software
+change might have installed a file that is signed
+incorrectly or damaged, or that might be malicious
+software from an unknown source. (Code 52)
 ```
 
 Some web searching on this terminology and "Code 52" identified the

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Maintained from src/ folder, HTML generated via Pandoc -->
   <meta charset="UTF-8">
   <title>grscheller software development blog</title>
   <link rel="stylesheet" href="style/blog.css">

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Maintained from src/ folder, HTML generated via Pandoc -->
   <meta charset="UTF-8">
   <title>grscheller software development blog</title>
   <link rel="stylesheet" href="style/blog.css">
@@ -53,7 +54,7 @@
     making it a part of the repo's wiki.</p>
     <p>I will continue maintaining the blog in Markdown, but am using Pandoc
     to convert it to HTML. The best thing now is that I can maintain the
-    Markdown using Nwovim.</p>
+    Markdown using Neovim.</p>
     <h3 id="new-github-repo-for-fpinscala-2023-07-04">New GitHub repo for
     fpinscala [2023-07-04]:</h3>
     <p>Started new repo: <strong>grscheller/fpinScala3Stdlib</strong> to
@@ -301,10 +302,11 @@
     happen, typed Device Manager into the Start Menu. Lo and behold, good
     old Device Manager launched. With an "!" point on the icon for the
     NVIDIA card. Drilling down on the icon I discover an error message:</p>
-    <pre><code>   Windows cannot verify the digital signature for the drivers
-       required for this device. A recent hardware or software change
-       might have installed a file that is signed incorrectly or damaged,
-       or that might be malicious software from an unknown source. (Code 52)</code></pre>
+    <pre class="text"><code>    Windows cannot verify the digital signature for the drivers
+    required for this device. A recent hardware or software
+    change might have installed a file that is signed
+    incorrectly or damaged, or that might be malicious
+    software from an unknown source. (Code 52)</code></pre>
     <p>Some web searching on this terminology and "Code 52" identified the
     problem, Windows was using Secure Boot to "blacklist" the NVIDIA drivers
     I installed.</p>

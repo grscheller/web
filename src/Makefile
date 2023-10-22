@@ -8,10 +8,11 @@ PANDOC = /usr/bin/pandoc
 MD2HTML_FLAGS = --from gfm --to html
 
 DOCS = ../docs/
-MDSOURCES = blog.md
-LOCAL_HTML_MDFILES = $(MDSOURCES:.md=.html)
+MD_SOURCES = blog.md
+MD_SOURCES_HTML = blog.pre blog.post
+LOCAL_HTML_MDFILES = $(MD_SOURCES:.md=.html)
 LOCAL_HTML_FILES = $(LOCAL_HTML_MDFILES)
-HTML_FILES = $(addprefix $(DOCS),$(MDSOURCES:.md=.html))
+HTML_FILES = $(addprefix $(DOCS),$(MD_SOURCES:.md=.html))
 
 %.html: %.md
 	$(PANDOC) $(MD2HTML_FLAGS) $< > $(<:.md=.tmp1);\
@@ -21,12 +22,12 @@ HTML_FILES = $(addprefix $(DOCS),$(MDSOURCES:.md=.html))
 
 default: $(LOCAL_HTML_FILES) $(HTML_FILES)
 
-$(LOCAL_HTML_MDFILES): $(MDSOURCES)
+$(LOCAL_HTML_MDFILES): $(MD_SOURCES) $(MD_SOURCES_HTML)
 
 $(HTML_FILES): $(LOCAL_HTML_FILES)	
 	$(CP) $(notdir $@) $@
 
 clean:
-	$(RM) -f $(notdir $(HTML_FILES))
+	$(RM) -f $(LOCAL_HTML_FILES)
 
 .PHONY: default clean html_files
