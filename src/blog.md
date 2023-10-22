@@ -65,8 +65,8 @@ produced for this blog. At work I noticed that everyone below the age of
 about 35 never uses two spaces between sentences. Time to help progress
 the English language a little bit.
 
-In nvim `:help`, one way to tell if you're looking at newer Neovim or
-older Vim docs is whether 1 or 2 spaces are used between sentences.
+In Neovim `:help` one way to tell if you're looking at older Vim
+documentation is if two spaces are used between sentences.
 
 As I write this, I feel completely handicapped by the native text
 editing interface GitHub provides. It is not as bad as the ones provides
