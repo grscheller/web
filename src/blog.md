@@ -5,33 +5,35 @@
 * [datastructures](https://github.com/grscheller/datastructures)
 * [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
 * [neovim-notes](https://github.com/grscheller/neovim-notes)
-* [dotfiles](https://github.com/grscheller/dotfiles)
-  * [nvim](https://github.com/grscheller/nvim)
-  * [fish](https://github.com/grscheller/fish)
-  * [home](https://github.com/grscheller/home)
-  * [sway-env](https://github.com/grscheller/sway-env)
-* [web](https://github.com/grscheller/web)
 * [scheller-linux-archive](https://github.com/grscheller/scheller-linux-archive)
+* [web](https://github.com/grscheller/web)
+* [dotfiles](https://github.com/grscheller/dotfiles)
+* [- nvim](https://github.com/grscheller/nvim)
+* [- fish](https://github.com/grscheller/fish)
+* [- home](https://github.com/grscheller/home)
+* [- sway-env](https://github.com/grscheller/sway-env)
 
 #### My PyPI Repositories:
 
 * [grscheller.datastructures](https://pypi.org/project/grscheller.datastructures/)
 
-#### My GitHub Pages Websites:
+#### My GitHub Pages:
 
 * [GRScheller Personal Links](https://grscheller.github.io/web/homepage.html)
-* [GRScheller Spftware Development Blog](https://grscheller.github.io/web/blog.html)
+* [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
+* [PyPI grscheller.datastructure docs](https://grscheller.github.io/datastructures/documentation.html)
 
 ### Moved blog to new home \[2023-21-21\]:
 
-Moved this blog from the scheller-linux-archive wiki to the GitHub Pages
-site associated with the grscheller/web repo. This new repo is where
-I have started keeping my software deveopment related web content. It
-made more sense making it part of the associated GitHub page than making
-it part of the repo's wiki.
+Moved this blog from the **grscheller/scheller-linux-archive** wiki to
+GitHub Pages. I maintain the blog in my **grscheller/web** repo. This
+repo is where I have started keeping my software deveopment related web
+content. It made more sense just deploying my to GitHub Pages than
+making it a part of the repo's wiki.
 
-I will continue to main the blog in Markdown, but I will be using Pandoc
-to convert it to HTML. 
+I will continue maintaining the blog in Markdown, but am using Pandoc to
+convert it to HTML. The best thing now is that I can maintain the
+Markdown using Nwovim.
 
 ### New GitHub repo for fpinscala \[2023-07-04\]:
 
@@ -61,11 +63,10 @@ One thing I have started doing differently is using only one space
 between sentences. Won't have any effect on the rendered Markdown
 produced for this blog. At work I noticed that everyone below the age of
 about 35 never uses two spaces between sentences. Time to help progress
-the English language.
+the English language a little bit.
 
-In nvim help whether the documentation uses 1 or 2 spaces between
-sentences is a way to know if you are looking at newer Neovim or older
-Vim stuff.
+In nvim `:help`, one way to tell if you're looking at newer Neovim or
+older Vim docs is whether 1 or 2 spaces are used between sentences.
 
 As I write this, I feel completely handicapped by the native text
 editing interface GitHub provides. It is not as bad as the ones provides
