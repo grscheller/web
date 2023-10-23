@@ -1,5 +1,11 @@
 # GRScheller Software Development Blog
 
+The GitHub Pages version of this Blog is still a work in progress.
+
+For a better viewing experience, view the source code for ths blog
+[here](https://github.com/grscheller/web/blob/main/src/blog.md)
+in its source code tree.
+
 #### My GITHUB Repositories:
 
 * [datastructures](https://github.com/grscheller/datastructures)
