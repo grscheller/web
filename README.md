@@ -22,4 +22,4 @@ The grscheller/web GitHub repository is licenced under the MIT License,
 see [MIT LICENSE](LICENSE) for details. The HTML used to render
 [GRScheller Software Development GitHub Page ](https://grscheller.github.io/web/)
 is licensed separately under the the Creative Commons CC0 license, see
-[CC0 LICENSE](docs/LICENSE) for details.
+[CC0 LICENSE](docs/LICENSE.txt) for details.
