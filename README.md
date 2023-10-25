@@ -7,14 +7,14 @@ Development GitHub Page.
 
 - [GRScheller GitHub Pages](https://grscheller.github.io/web)
   - [GRScheller Blog](https://grscheller.github.io/web/blog.html)
-  - [Personal Home Page](https://grscheller.github.io/web/homepage.html)
+  - [Personal Bookmark Page](https://grscheller.github.io/web/bookmark.html)
 
 ## GitHub Sources
 
 - [GRScheller Blog](src/blog.md)
   - [CSS: style/blog.css](docs/style/blog.css)
-- [Personal Home Page](docs/homepage.html)
-  - [CSS: style/homepage.css](docs/style/homepage.css)
+- [Personal Home Page](docs/bookmark.html)
+  - [CSS: style/homepage.css](docs/style/bookmark.css)
 
 ## Licenses
 
