@@ -25,7 +25,7 @@ in its source code tree.
 
 #### My GitHub Pages:
 
-* [GRScheller Personal Links](https://grscheller.github.io/web/homepage.html)
+* [GRScheller Bookmark Page](https://grscheller.github.io/web/homepage.html)
 * [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
 * [PyPI grscheller.datastructure docs](https://grscheller.github.io/datastructures/documentation.html)
 
