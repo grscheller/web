@@ -13,7 +13,7 @@ Development GitHub Page.
 
 - [GRScheller Blog](src/blog.md)
   - [CSS: style/blog.css](docs/style/blog.css)
-- [Personal Home Page](docs/bookmark.html)
+- [GRScheller Bookmark Page](docs/bookmark.html)
   - [CSS: style/homepage.css](docs/style/bookmark.css)
 
 ## Licenses
