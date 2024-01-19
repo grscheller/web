@@ -6,36 +6,75 @@ For a better viewing experience, view the source code for ths blog
 [here](https://github.com/grscheller/web/blob/main/src/blog.md)
 in its source code tree.
 
+#### My PyPI Project Repositories:
+
+* [grscheller.boring-math](https://pypi.org/project/grscheller.boring-math/)
+* [grscheller.datastructures](https://pypi.org/project/grscheller.datastructures/)
+
 #### My GITHUB Repositories:
 
+* [boring-math](https://github.com/grscheller/boring-math)
 * [datastructures](https://github.com/grscheller/datastructures)
-* [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
 * [neovim-notes](https://github.com/grscheller/neovim-notes)
+* [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
 * [scheller-linux-archive](https://github.com/grscheller/scheller-linux-archive)
 * [web](https://github.com/grscheller/web)
 * [dotfiles](https://github.com/grscheller/dotfiles)
-* [- nvim](https://github.com/grscheller/nvim)
-* [- fish](https://github.com/grscheller/fish)
-* [- home](https://github.com/grscheller/home)
-* [- sway-env](https://github.com/grscheller/sway-env)
-
-#### My PyPI Repositories:
-
-* [grscheller.datastructures](https://pypi.org/project/grscheller.datastructures/)
+* [nvim dotfiles submodule](https://github.com/grscheller/nvim)
+* [fish dotfiles submodule](https://github.com/grscheller/fish)
+* [home dotfiles submodule](https://github.com/grscheller/home)
+* [sway-env dotfiles submodule](https://github.com/grscheller/sway-env)
 
 #### My GitHub Pages:
 
+* [PyPI grscheller Project Repos](https://grscheller.github.io/web/pypi_repos.html)
 * [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
 * [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
-* [PyPI grscheller.datastructure docs](https://grscheller.github.io/datastructures/documentation.html)
 
-### Moved blog to new home \[2023-21-21\]:
+### Maintaining 2 PyPI projects \[2024-01-18\]:
+
+I now maintain two projects on the Python Package Index (PyPI).
+
+* grscheller.boring-math
+* grscheller.datastructures
+
+At work last year, late in the summer, I was a bit sort on my
+"acquisition continuous learning points." I work for a DoD research lab
+and my position is acquisition coded. A coworker suggested I take on
+data structures on-line course. I thought it might be a nice review.
+I had experience in most of the data structures covered, but I had never
+heard of one called a "circular array" before. So I coded one up quickly
+in Python. I thought of adding it to my mosh-pit of code snippets I have
+in my scheller-linux-archive GitHub repo. Well, over the past several
+years I have been struggling to grok the Python packaging ecosystem.
+Using this as an opportunity to learn, I decided to make my little
+circular array program into its own PyPI project. 
+
+Well, that little circular array program has grown into a data structure
+package that supports functional programming. I tried to keep the
+package pythonic. It does not force functional programmming onto the
+user, nor does it force uncaught exceptions either. The data structures
+do not store Python None as a value. This empowers the package to
+semantically interpret None as a non-existent value. How does one store
+something that does not exist in a concrete data structure anyway? Any
+case, I do use None as an implementation detail.
+
+The second project, Daddy's Boring Math Library, is based on a Python
+module I wrote back in 2016 when I started to seriously learn Python.
+The name was suggested by my then 13 year old daughter Mary. I have
+Master degrees in Mathimatics and Physics, so I expect this project to
+gradually grow over the next few years based on my recreational
+mathematic interests.
+
+Both projects use Flit as the build and publishing tool to PyPI.
+
+### Moved blog to new home \[2023-10-21\]:
 
 Moved this blog from the **grscheller/scheller-linux-archive** wiki to
 GitHub Pages. I maintain the blog in my **grscheller/web** repo. This
 repo is where I have started keeping my software deveopment related web
 content. It made more sense just deploying my to GitHub Pages than
-making it a part of the repo's wiki.
+making it a part of that repo's wiki.
 
 I will continue maintaining the blog in Markdown, but am using Pandoc to
 convert it to HTML. The best thing now is that I can maintain the
