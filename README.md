@@ -1,7 +1,7 @@
 # grscheller/web GitHub Repo
 
-Infrastructure used to develop and maintain the GRScheller Software
-Development GitHub Page.
+**GRScheller Software Development GitHub Page** content and the
+infrastructure used to maintain it.
 
 ## Rendered GitHub Pages
 
@@ -10,17 +10,7 @@ Development GitHub Page.
   - [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
   - [GRScheller PyPI Projects](https://grscheller.github.io/web/pypi_repos.html)
 
-## GitHub Sources
-
-- [GRScheller Blog](src/blog.md)
-  - [CSS: style/blog.css](docs/style/blog.css)
-- [GRScheller Bookmark Page](docs/bookmark.html)
-  - [CSS: style/homepage.css](docs/style/bookmark.css)
-- [GRScheller PyPI Projects](docs/pypi_repos.html)
-  - [CSS: style/homepage.css](docs/style/pypi_repos.css)
-
-
-## Public Domain Declaration
+#### Public Domain Declaration
 
 <p xmlns:dct="http://purl.org/dc/terms/"
    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
