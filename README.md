@@ -7,7 +7,8 @@ Development GitHub Page.
 
 - [GRScheller GitHub Pages](https://grscheller.github.io/web)
   - [GRScheller Blog](https://grscheller.github.io/web/blog.html)
-  - [Personal Bookmark Page](https://grscheller.github.io/web/bookmark.html)
+  - [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
+  - [GRScheller PyPI Projects](https://grscheller.github.io/web/pypi_repos.html)
 
 ## GitHub Sources
 
@@ -15,6 +16,9 @@ Development GitHub Page.
   - [CSS: style/blog.css](docs/style/blog.css)
 - [GRScheller Bookmark Page](docs/bookmark.html)
   - [CSS: style/homepage.css](docs/style/bookmark.css)
+- [GRScheller PyPI Projects](docs/pypi_repos.html)
+  - [CSS: style/homepage.css](docs/style/pypi_repos.css)
+
 
 ## Public Domain Declaration
 

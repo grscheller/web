@@ -31,7 +31,7 @@ in its source code tree.
 * [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
 * [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
 
-### Maintaining 2 PyPI projects \[2024-01-18\]:
+### Maintaining two PyPI projects \[2024-01-18\]:
 
 I now maintain two projects on the Python Package Index (PyPI).
 
