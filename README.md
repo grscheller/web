@@ -28,13 +28,18 @@ Development GitHub Page.
      href="http://creativecommons.org/publicdomain/zero/1.0/">
      <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png"
           style="border-style: none;"
-          alt="CC0"></a>
+          alt="Unlicense"></a>
+<\p>
 
-  To the extent possible under law,
-  [Geoffrey R. Scheller](https://github.com/grscheller)
-  has waived all copyright and related or neighboring rights
-  to [grscheller/neovim-notes](https://github.com/grscheller/neovim-notes).
-  This work is published from the United States of America.
-</p>
+To the extent possible under law,
+[Geoffrey R. Scheller](https://github.com/grscheller)
+has waived all copyright and
+
+related or neighboring rights to
+[GRScheller Software Development GitHub Page](https://grscheller.github.io/web)
+and
+[grscheller/web](https://github.com/grscheller/web).
+
+This work is published from the United States of America.
 
 See [LICENSE](LICENSE) for details.
