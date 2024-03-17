@@ -13,23 +13,48 @@ in its source code tree.
 
 #### My GITHUB Repositories:
 
+* [dotfiles](https://github.com/grscheller/dotfiles)
 * [boring-math](https://github.com/grscheller/boring-math)
+* [circular-array](https://github.com/grscheller/circular-array)
 * [datastructures](https://github.com/grscheller/datastructures)
-* [neovim-notes](https://github.com/grscheller/neovim-notes)
+* [grok-typescript](https://github.com/grscheller/grok-typescript)
 * [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
+* [neovim-notes](https://github.com/grscheller/neovim-notes)
+* [git-notes](https://github.com/grscheller/git-notes)
 * [scheller-linux-archive](https://github.com/grscheller/scheller-linux-archive)
 * [web](https://github.com/grscheller/web)
-* [dotfiles](https://github.com/grscheller/dotfiles)
-* [nvim dotfiles submodule](https://github.com/grscheller/nvim)
-* [fish dotfiles submodule](https://github.com/grscheller/fish)
-* [home dotfiles submodule](https://github.com/grscheller/home)
-* [sway-env dotfiles submodule](https://github.com/grscheller/sway-env)
 
 #### My GitHub Pages:
 
 * [PyPI grscheller Project Repos](https://grscheller.github.io/web/pypi_repos.html)
 * [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
 * [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
+
+### Added another PyPI projects \[2024-03-17\]:
+
+I started another Python Package Index project named
+grscheller.circular-array back on 2024-01-28. I split this data
+structure out of grscheller.datastructures. It is a stable release at
+version 2.0.0 (I was a bit optimistic for version 1.0.0). It is used by
+both my other PyPI projects. I thought it might be more useful to the
+Python development community if it were its own project and not just
+a utility class buried in my grscheller.datastructures project.
+
+The CircularArray class implements the classic circular array datatype
+from college level computer science data structure courses. It is
+a stateful, auto-resizing, indexable, double sided queue data structure
+with O(1) indexing and O(1) pushes and pops from either end. This data
+structure is not slicable.
+
+When iterated over, it caches its current state so that the data
+structure can safely mutate while the iterator leisurely iterates.
+
+The class wraps a python list. It can be used directly as an improved
+version of a Python List, or in the implementation of other data
+structures in a "has-a" relationship. It uses `__slots__` for size and
+speed efficiency. It is not designed to be used as the base of some sort
+of inheritance hierarchy, so if that is what you want to do, you will
+need to add a `__dict__` to it. Or just fork it and take out the slots.
 
 ### Maintaining two PyPI projects \[2024-01-18\]:
 
@@ -62,9 +87,9 @@ case, I do use None as an implementation detail.
 The second project, Daddy's Boring Math Library, is based on a Python
 module I wrote back in 2016 when I started to seriously learn Python.
 The name was suggested by my then 13 year old daughter Mary. I have
-Master degrees in Mathimatics and Physics, so I expect this project to
+Master degrees in Mathematics and Physics, so I expect this project to
 gradually grow over the next few years based on my recreational
-mathematic interests.
+mathematical interests.
 
 Both projects use Flit as the build and publishing tool to PyPI.
 
