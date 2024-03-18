@@ -26,6 +26,7 @@ $(LOCAL_HTML_MDFILES): $(MD_SOURCES) $(MD_SOURCES_HTML)
 
 $(HTML_FILES): $(LOCAL_HTML_FILES)	
 	$(CP) $(notdir $@) $@
+	$(RM) $(notdir $@)
 
 clean:
 	$(RM) -f $(LOCAL_HTML_FILES)
