@@ -17,6 +17,7 @@ in its source code tree.
 * [boring-math](https://github.com/grscheller/boring-math)
 * [circular-array](https://github.com/grscheller/circular-array)
 * [datastructures](https://github.com/grscheller/datastructures)
+* [grok-lua](https://github.com/grscheller/grok-lua)
 * [grok-typescript](https://github.com/grscheller/grok-typescript)
 * [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
 * [neovim-notes](https://github.com/grscheller/neovim-notes)
@@ -29,6 +30,24 @@ in its source code tree.
 * [PyPI grscheller Project Repos](https://grscheller.github.io/web/pypi_repos.html)
 * [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
 * [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
+
+### Added a Lua project to master Lua \[2024-03-18\]:
+
+This project is similar to one I created back on 2024-01-21 to take my
+first beginning steps with TypeScript (TS). Unlike that project, I am
+starting off at an intermediate skill level with Lua. My experience
+comes from maintaining my Lua based Neovim configuration files and
+helping my daughters with Luau based Roblox code. See
+
+* [grscheller/grok-lua](https://github.com/grscheller/grok-lua)
+* [grscheller/grok-typescript](https://github.com/grscheller/grok-typescript)
+
+Most of the front-end developers I work with started off learning React.
+Someday I might do so too, with React or whatever its successor might
+be, but not before implementing a crude web framework myself.
+
+I wish I lived in a world where Lua, and not TypeScript, was the
+embedded language of web browsers. 
 
 ### Added another PyPI projects \[2024-03-17\]:
 
