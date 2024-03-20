@@ -35,7 +35,7 @@ in its source code tree.
 
 I always thought that npm was just the package manager component of
 Node.js. Actually it is not. The name "npm" does not even stand for
-"node package manager. According to the
+node package manager. According to the
 [npm/cli](https://github.com/npm/cli) GitHub repo README.md,
 
 ```
@@ -54,13 +54,16 @@ Node.js. Actually it is not. The name "npm" does not even stand for
 After several hours of web searching mostly secondary,
 non-authoritative sources, this is what I found,
 
-* Node.js is a JavaScript framework maintained by the non-profit Node.js
+* Node.js maintained by the non-profit OpenJS Foundation
+  * Node.js is a JavaScript framework
   * Node,js source code can be found [here](https://github.com/nodejs/node) 
 * npm (the cmdline utility) is an open source package manager for Node.js
-  * the source code is maintained by GitHub [here](https://github.com/npm/cli)
+  * npm is a package manager for the Node.js framework
+  * source code, maintained by GitHub, can be found [here](https://github.com/npm/cli)
 * npm (the company) was bought by and absorbed into GitHub in 2020
   * GitHub was bought by Microsoft in 2018
-* npm (the registry) is a service of GitHub and is branded npm
+* npm (the registry) is a service "to the community" provided by GitHub
+  * this service is branded npm
 
 "Authoritative" sources like GitHub, Microsoft, and all 342 npm GitHub
 repos are vague regarding the corporate ownership structure. When
