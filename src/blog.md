@@ -1,17 +1,17 @@
 # GRScheller Software Development Blog
 
 The GitHub Pages version of this Blog is still a work in progress.
-
 For a better viewing experience, view the source code for ths blog
 [here](https://github.com/grscheller/web/blob/main/src/blog.md)
 in its source code tree.
 
-#### My PyPI Project Repositories:
+### My PyPI Project Repositories:
 
-* [grscheller.boring-math](https://pypi.org/project/grscheller.boring-math/)
-* [grscheller.datastructures](https://pypi.org/project/grscheller.datastructures/)
+* [grscheller.boring-math](https://pypi.org/project/grscheller.boring-math)
+* [grscheller.circular-array](https://pypi.org/project/grscheller.circular-array)
+* [grscheller.datastructures](https://pypi.org/project/grscheller.datastructures)
 
-#### My GITHUB Repositories:
+### My GITHUB Repositories:
 
 * [dotfiles](https://github.com/grscheller/dotfiles)
 * [boring-math](https://github.com/grscheller/boring-math)
@@ -25,13 +25,63 @@ in its source code tree.
 * [scheller-linux-archive](https://github.com/grscheller/scheller-linux-archive)
 * [web](https://github.com/grscheller/web)
 
-#### My GitHub Pages:
+### My GitHub Pages:
 
 * [PyPI grscheller Project Repos](https://grscheller.github.io/web/pypi_repos.html)
 * [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
 * [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
 
-### Added a Lua project to master Lua \[2024-03-18\]:
+## Node.js vs npm \[2024-03-19\]:
+
+I always thought that npm was just the package manager component of
+Node.js. Actually it is not. The name "npm" does not even stand for
+"node package manager. According to the
+[npm/cli](https://github.com/npm/cli) GitHub repo README.md,
+
+```
+
+    Contrary to popular belief, npm is not in fact an acronym for
+    "Node Package Manager"; It is a recursive ba:wqcronymic abbreviation
+    for "npm is not an acronym" (if the project was named "ninaa",
+    then it would be an acronym). The precursor to npm was actually
+    a bash utility named "pm", which was the shortform name of
+    "pkgmakeinst" - a bash function that installed various things
+    on various platforms. If npm were to ever have been considered
+    an acronym, it would be as "node pm" or, potentially "new pm".
+
+```
+
+After several hours of web searching mostly secondary,
+non-authoritative sources, this is what I found,
+
+* Node.js is a JavaScript framework maintained by the non-profit Node.js
+  * Node,js source code can be found [here](https://github.com/nodejs/node) 
+* npm (the cmdline utility) is an open source package manager for Node.js
+  * the source code is maintained by GitHub [here](https://github.com/npm/cli)
+* npm (the company) was bought by and absorbed into GitHub in 2020
+  * GitHub was bought by Microsoft in 2018
+* npm (the registry) is a service of GitHub and is branded npm
+
+"Authoritative" sources like GitHub, Microsoft, and all 342 npm GitHub
+repos are vague regarding the corporate ownership structure. When
+I tried to research this through Dun & Bradstreet I hit a paywall.
+
+From this
+[GitHub blog](https://github.blog/2020-03-16-npm-is-joining-github/)
+dated March 16, 2020",
+
+```
+
+    Later this year, we will enable npm’s paying customers to move their
+    private npm packages to GitHub Packages—allowing npm to exclusively
+    focus on being a great public registry for JavaScript.
+
+```
+
+Looks like npm (the repository) is Micro$oft's loss leader for private
+JavaScript package hosting. At least Google didn't buy npm.
+
+## Added a Lua project to master Lua \[2024-03-18\]:
 
 This project is similar to one I created back on 2024-01-21 to take my
 first beginning steps with TypeScript (TS). Unlike that project, I am
@@ -49,7 +99,7 @@ be, but not before implementing a crude web framework myself.
 I wish I lived in a world where Lua, and not TypeScript, was the
 embedded language of web browsers. 
 
-### Added another PyPI projects \[2024-03-17\]:
+## Added another PyPI projects \[2024-03-17\]:
 
 I started another Python Package Index project named
 grscheller.circular-array back on 2024-01-28. I split this data
@@ -75,7 +125,7 @@ speed efficiency. It is not designed to be used as the base of some sort
 of inheritance hierarchy, so if that is what you want to do, you will
 need to add a `__dict__` to it. Or just fork it and take out the slots.
 
-### Maintaining two PyPI projects \[2024-01-18\]:
+## Maintaining two PyPI projects \[2024-01-18\]:
 
 I now maintain two projects on the Python Package Index (PyPI).
 
@@ -112,7 +162,7 @@ mathematical interests.
 
 Both projects use Flit as the build and publishing tool to PyPI.
 
-### Moved blog to new home \[2023-10-21\]:
+## Moved blog to new home \[2023-10-21\]:
 
 Moved this blog from the **grscheller/scheller-linux-archive** wiki to
 GitHub Pages. I maintain the blog in my **grscheller/web** repo. This
@@ -124,7 +174,7 @@ I will continue maintaining the blog in Markdown, but am using Pandoc to
 convert it to HTML. The best thing now is that I can maintain the
 Markdown using Neovim.
 
-### New GitHub repo for fpinscala \[2023-07-04\]:
+## New GitHub repo for fpinscala \[2023-07-04\]:
 
 Started new repo: **grscheller/fpinScala3Stdlib** to update the work
 done in my **grscheller/scheller-linux-archive** repo where I was
@@ -142,7 +192,7 @@ I was originally inspired to do this from
 updated for Scala 3. At this point, I will use Chiusano's and
 Bjarnason's book more for inspiration than as a tutorial.
 
-### Almost forgot about this "blog" \[2023-06-03\]:
+## Almost forgot about this "blog" \[2023-06-03\]:
 
 While determining how likely one of my GitHub repositories will come up
 on an internet search, I stumbled upon this blog of mine. I figured its
@@ -166,7 +216,7 @@ this with nvim in a terminal and cut-n-paste here.
 I find it interesting that the GitHub editing client is pegging "Neovim"
 and "nvim" as spelling mistakes, but not Emacs, Vim, nor Nano.
 
-### Dropping Gnome 3 in favor of Sway \[2021-12-12\]:
+## Dropping Gnome 3 in favor of Sway \[2021-12-12\]:
 
 I wish I did this a year ago, maybe several years ago if I went with i3
 first.
@@ -205,7 +255,7 @@ release manager, Adam Jackson from Redhat, recommends its time we
 start to
 [migrate off Xorg](https://ajaxnwnk.blogspot.com/2020/10/on-abandoning-x-server.html).
 
-### Bike shedding my Neovim configuration \[2021-07-11\]:
+## Bike shedding my Neovim configuration \[2021-07-11\]:
 
 In the last 2 months I have redone my Neovim configuration several
 times. Now I am using `~/.config/nvim/init.lua` for my config. I am
@@ -229,7 +279,7 @@ Still can't figure out why lspconf configured pyright is failing to find
 my Python libraries in a very simple project where I have a very simple
 `$PYTHONPATH`, `lib:../lib`, available in the environment.
 
-### Finally making progress with Scala again \[2021-05-31\]:
+## Finally making progress with Scala again \[2021-05-31\]:
 
 After 3 years of stagnating with Scala, I am finally making some forward
 progress. I have sorted out many of the various overloaded meanings of
@@ -266,7 +316,7 @@ versions,
 So, there seems to be no "standard" way to universally check the version
 of Scala you are running on at either run time or in the REPL.
 
-### Gnome 3 Startup Behavior \[2021-04-18\]:
+## Gnome 3 Startup Behavior \[2021-04-18\]:
 Recently I noticed that configuring Alacritty terminal emulator to start
 the fish shell caused environment variables to be defined which should
 not have been. Also the $PATH was badly munged. Making fish my login
@@ -285,7 +335,7 @@ This sourcing behavior might come in handy, especially if I ever want to
 play around alternate $XDG_CONFIG_HOME configurations. Just wished
 I would have been given a heads up on this behavior.
 
-### The "POSIX Shell" \[2020-11-12\]:
+## The "POSIX Shell" \[2020-11-12\]:
 
 There is no such thing as the POSIX shell. POSIX shell is an IEEE/Open
 Group specification. The original AT&T "Bourne Shell" is not a POSIX
@@ -310,7 +360,7 @@ work against every possible Bourne descendant shell ever to have
 existed, unless one tests it against every possible Bourne descendant
 shell ever to have existed?
 
-### Shell startup in historical context \[2020-07-28\]:
+## Shell startup in historical context \[2020-07-28\]:
 
 Traditionally, a UNIX shell sets up an initial shell environment when
 logging into a system via a login shell. The shell would source a file
@@ -382,7 +432,7 @@ environment. I wish my command line and desktop environments to
 complement and interact with each other. I use shell environments to
 help manage my programming environments.
 
-### Does Microsoft want ignorant end users? \[2019-03-23\]:
+## Does Microsoft want ignorant end users? \[2019-03-23\]:
 
 Over the last 3 weeks I lost several days of effort getting an NVIDIA
 CUDA environment implemented on Windows 10 using Anaconda Python and the
@@ -439,7 +489,7 @@ all costs protect end-users from themselves" mentality that we see in
 Linux desktops environments where the terminal emulator is made very
 difficult for new end-users to find.
 
-### In the name of POSIX compliance \[2019-03-17\]:
+## In the name of POSIX compliance \[2019-03-17\]:
 
 On GNU/Linux, at least Arch Linux using the GNU glibc library, there is
 a trick used in /usr/include/bits/confname.h, included by
@@ -486,7 +536,7 @@ Hopefully real modules will be coming to C sometime soon; its been
 40 years too late. At least in C++ enumerations are typed. C needs
 better type safety.
 
-### Advanced Programming in the UNIX Environment (APUE) \[2019-01-16\]:
+## Advanced Programming in the UNIX Environment (APUE) \[2019-01-16\]:
 
 I am making progress working my way through
 "Advanced Programming in the UNIX Environment" 3rd edition
@@ -507,7 +557,7 @@ an implementation of Stevens' UNIX System Programming API:
 Currently I only have access to Linux based systems, but eventually wish
 to adapt to and test on other Unix like OS's.
 
-### C and C++ really are different languages \[2018-12-16\]:
+## C and C++ really are different languages \[2018-12-16\]:
 
 In one of my
 [scheller-linux-archives](https://github.com/grscheller/scheller-linux-archive)
@@ -562,7 +612,7 @@ Most certainly. Will a better, safer, language ever come along and
 replace C? Probably not in our lifetimes. C is "good enough" and the
 price to replace it "too high."
 
-### Linux/Unix/POSIX Systems Programming \[2018-12-16\]:
+## Linux/Unix/POSIX Systems Programming \[2018-12-16\]:
 
 I have always admired W. Richard Steven's books on Unix System
 programming. Back in the early to mid 1990's, I thought someday I would
@@ -579,7 +629,7 @@ I am trying to replace. Thanks to the maturity and stability of the
 POSIX and X/Open standards, Steven's books are as relevant today as they
 were back in the 1990's.
 
-### Slowing up on FP in Scala \[2018-03-01\]:
+## Slowing up on FP in Scala \[2018-03-01\]:
 
 I having trouble in chapter 9, Parser Combinators in
 [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala).
@@ -594,7 +644,7 @@ beautiful. The concept of developing laws for a software design before
 it is even implemented, and then letting these laws guide the
 implementation, is something I will need to get much better at doing.
 
-### Markdown rendering errors \[2017-11-08\]:
+## Markdown rendering errors \[2017-11-08\]:
 
 I noticed that both pandoc and GitHub render markdown documents with
 HTML errors. Consider my GitHub repo's
@@ -611,7 +661,7 @@ that surprising. What I find utterly jaw dropping is the lack of
 information and/or interest on the Web regarding the existence of these
 types of errors!
 
-### Scala Implicits \[2017-08-01\]:
+## Scala Implicits \[2017-08-01\]:
 
 There's seems to be a big hole in my Scala toolbox, __Implicits__.
 I like to make everything explicit. I like code that you can reverse
@@ -629,7 +679,7 @@ the purpose of defining a context. Implicit techniques are not only much
 simpler, they come with a substantially less computational
 price. Supplying context should not require sequencing.
 
-### My evolution as a FP Scala Developer \[2017-07-02\]:
+## My evolution as a FP Scala Developer \[2017-07-02\]:
 
 1. Using scala as a better java
 2. Mix of OOP + FP elements - avoiding vars and nulls
@@ -643,7 +693,7 @@ price. Supplying context should not require sequencing.
 Currently, I am somewhere between steps 6 and 7. I might go back and try
 Haskell again to help me tackle step 8.
 
-### My Scala programmer background \[2017-07-02\]:
+## My Scala programmer background \[2017-07-02\]:
 
 I don't come from a Java OOP background. Python run-time OOP allowed me
 to finally understand C++ style compile-time OOP. Professionally I have

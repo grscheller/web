@@ -12,19 +12,20 @@
   <p>
     <h1 id="grscheller-software-development-blog">GRScheller Software
     Development Blog</h1>
-    <p>The GitHub Pages version of this Blog is still a work in
-    progress.</p>
-    <p>For a better viewing experience, view the source code for ths blog <a
+    <p>The GitHub Pages version of this Blog is still a work in progress.
+    For a better viewing experience, view the source code for ths blog <a
     href="https://github.com/grscheller/web/blob/main/src/blog.md">here</a>
     in its source code tree.</p>
-    <h4 id="my-pypi-project-repositories">My PyPI Project Repositories:</h4>
+    <h3 id="my-pypi-project-repositories">My PyPI Project Repositories:</h3>
     <ul>
     <li><a
-    href="https://pypi.org/project/grscheller.boring-math/">grscheller.boring-math</a></li>
+    href="https://pypi.org/project/grscheller.boring-math">grscheller.boring-math</a></li>
     <li><a
-    href="https://pypi.org/project/grscheller.datastructures/">grscheller.datastructures</a></li>
+    href="https://pypi.org/project/grscheller.circular-array">grscheller.circular-array</a></li>
+    <li><a
+    href="https://pypi.org/project/grscheller.datastructures">grscheller.datastructures</a></li>
     </ul>
-    <h4 id="my-github-repositories">My GITHUB Repositories:</h4>
+    <h3 id="my-github-repositories">My GITHUB Repositories:</h3>
     <ul>
     <li><a href="https://github.com/grscheller/dotfiles">dotfiles</a></li>
     <li><a
@@ -45,7 +46,7 @@
     href="https://github.com/grscheller/scheller-linux-archive">scheller-linux-archive</a></li>
     <li><a href="https://github.com/grscheller/web">web</a></li>
     </ul>
-    <h4 id="my-github-pages">My GitHub Pages:</h4>
+    <h3 id="my-github-pages">My GitHub Pages:</h3>
     <ul>
     <li><a href="https://grscheller.github.io/web/pypi_repos.html">PyPI
     grscheller Project Repos</a></li>
@@ -54,8 +55,58 @@
     <li><a href="https://grscheller.github.io/web/blog.html">GRScheller
     Software Development Blog</a></li>
     </ul>
-    <h3 id="added-a-lua-project-to-master-lua-2024-03-18">Added a Lua
-    project to master Lua [2024-03-18]:</h3>
+    <h2 id="nodejs-vs-npm-2024-03-19">Node.js vs npm [2024-03-19]:</h2>
+    <p>I always thought that npm was just the package manager component of
+    Node.js. Actually it is not. The name "npm" does not even stand for
+    "node package manager. According to the <a
+    href="https://github.com/npm/cli">npm/cli</a> GitHub repo README.md,</p>
+    <pre><code>
+        Contrary to popular belief, npm is not in fact an acronym for
+        &quot;Node Package Manager&quot;; It is a recursive ba:wqcronymic abbreviation
+        for &quot;npm is not an acronym&quot; (if the project was named &quot;ninaa&quot;,
+        then it would be an acronym). The precursor to npm was actually
+        a bash utility named &quot;pm&quot;, which was the shortform name of
+        &quot;pkgmakeinst&quot; - a bash function that installed various things
+        on various platforms. If npm were to ever have been considered
+        an acronym, it would be as &quot;node pm&quot; or, potentially &quot;new pm&quot;.
+    </code></pre>
+    <p>After several hours of web searching mostly secondary,
+    non-authoritative sources, this is what I found,</p>
+    <ul>
+    <li>Node.js is a JavaScript framework maintained by the non-profit
+    Node.js
+    <ul>
+    <li>Node,js source code can be found <a
+    href="https://github.com/nodejs/node">here</a></li>
+    </ul></li>
+    <li>npm (the cmdline utility) is an open source package manager for
+    Node.js
+    <ul>
+    <li>the source code is maintained by GitHub <a
+    href="https://github.com/npm/cli">here</a></li>
+    </ul></li>
+    <li>npm (the company) was bought by and absorbed into GitHub in 2020
+    <ul>
+    <li>GitHub was bought by Microsoft in 2018</li>
+    </ul></li>
+    <li>npm (the registry) is a service of GitHub and is branded npm</li>
+    </ul>
+    <p>"Authoritative" sources like GitHub, Microsoft, and all 342 npm
+    GitHub repos are vague regarding the corporate ownership structure. When
+    I tried to research this through Dun &amp; Bradstreet I hit a
+    paywall.</p>
+    <p>From this <a
+    href="https://github.blog/2020-03-16-npm-is-joining-github/">GitHub
+    blog</a> dated March 16, 2020",</p>
+    <pre><code>
+        Later this year, we will enable npm’s paying customers to move their
+        private npm packages to GitHub Packages—allowing npm to exclusively
+        focus on being a great public registry for JavaScript.
+    </code></pre>
+    <p>Looks like npm (the repository) is Micro$oft's loss leader for
+    private JavaScript package hosting. At least Google didn't buy npm.</p>
+    <h2 id="added-a-lua-project-to-master-lua-2024-03-18">Added a Lua
+    project to master Lua [2024-03-18]:</h2>
     <p>This project is similar to one I created back on 2024-01-21 to take
     my first beginning steps with TypeScript (TS). Unlike that project, I am
     starting off at an intermediate skill level with Lua. My experience
@@ -72,8 +123,8 @@
     might be, but not before implementing a crude web framework myself.</p>
     <p>I wish I lived in a world where Lua, and not TypeScript, was the
     embedded language of web browsers.</p>
-    <h3 id="added-another-pypi-projects-2024-03-17">Added another PyPI
-    projects [2024-03-17]:</h3>
+    <h2 id="added-another-pypi-projects-2024-03-17">Added another PyPI
+    projects [2024-03-17]:</h2>
     <p>I started another Python Package Index project named
     grscheller.circular-array back on 2024-01-28. I split this data
     structure out of grscheller.datastructures. It is a stable release at
@@ -95,8 +146,8 @@
     some sort of inheritance hierarchy, so if that is what you want to do,
     you will need to add a <code>__dict__</code> to it. Or just fork it and
     take out the slots.</p>
-    <h3 id="maintaining-two-pypi-projects-2024-01-18">Maintaining two PyPI
-    projects [2024-01-18]:</h3>
+    <h2 id="maintaining-two-pypi-projects-2024-01-18">Maintaining two PyPI
+    projects [2024-01-18]:</h2>
     <p>I now maintain two projects on the Python Package Index (PyPI).</p>
     <ul>
     <li>grscheller.boring-math</li>
@@ -128,8 +179,8 @@
     gradually grow over the next few years based on my recreational
     mathematical interests.</p>
     <p>Both projects use Flit as the build and publishing tool to PyPI.</p>
-    <h3 id="moved-blog-to-new-home-2023-10-21">Moved blog to new home
-    [2023-10-21]:</h3>
+    <h2 id="moved-blog-to-new-home-2023-10-21">Moved blog to new home
+    [2023-10-21]:</h2>
     <p>Moved this blog from the
     <strong>grscheller/scheller-linux-archive</strong> wiki to GitHub Pages.
     I maintain the blog in my <strong>grscheller/web</strong> repo. This
@@ -139,8 +190,8 @@
     <p>I will continue maintaining the blog in Markdown, but am using Pandoc
     to convert it to HTML. The best thing now is that I can maintain the
     Markdown using Neovim.</p>
-    <h3 id="new-github-repo-for-fpinscala-2023-07-04">New GitHub repo for
-    fpinscala [2023-07-04]:</h3>
+    <h2 id="new-github-repo-for-fpinscala-2023-07-04">New GitHub repo for
+    fpinscala [2023-07-04]:</h2>
     <p>Started new repo: <strong>grscheller/fpinScala3Stdlib</strong> to
     update the work done in my
     <strong>grscheller/scheller-linux-archive</strong> repo where I was
@@ -155,8 +206,8 @@
     href="https://github.com/ShapelessCat/fpinscala3">ShapelessCat/fpinscala3</a>
     updated for Scala 3. At this point, I will use Chiusano's and
     Bjarnason's book more for inspiration than as a tutorial.</p>
-    <h3 id="almost-forgot-about-this-blog-2023-06-03">Almost forgot about
-    this "blog" [2023-06-03]:</h3>
+    <h2 id="almost-forgot-about-this-blog-2023-06-03">Almost forgot about
+    this "blog" [2023-06-03]:</h2>
     <p>While determining how likely one of my GitHub repositories will come
     up on an internet search, I stumbled upon this blog of mine. I figured
     its time I give it a little love.</p>
@@ -175,8 +226,8 @@
     <p>I find it interesting that the GitHub editing client is pegging
     "Neovim" and "nvim" as spelling mistakes, but not Emacs, Vim, nor
     Nano.</p>
-    <h3 id="dropping-gnome-3-in-favor-of-sway-2021-12-12">Dropping Gnome 3
-    in favor of Sway [2021-12-12]:</h3>
+    <h2 id="dropping-gnome-3-in-favor-of-sway-2021-12-12">Dropping Gnome 3
+    in favor of Sway [2021-12-12]:</h2>
     <p>I wish I did this a year ago, maybe several years ago if I went with
     i3 first.</p>
     <p>What was holding me back was the proprietary NVIDIA drives my laptop
@@ -207,8 +258,8 @@
     time we start to <a
     href="https://ajaxnwnk.blogspot.com/2020/10/on-abandoning-x-server.html">migrate
     off Xorg</a>.</p>
-    <h3 id="bike-shedding-my-neovim-configuration-2021-07-11">Bike shedding
-    my Neovim configuration [2021-07-11]:</h3>
+    <h2 id="bike-shedding-my-neovim-configuration-2021-07-11">Bike shedding
+    my Neovim configuration [2021-07-11]:</h2>
     <p>In the last 2 months I have redone my Neovim configuration several
     times. Now I am using <code>~/.config/nvim/init.lua</code> for my
     config. I am sorting out <code>neovim/nvim-lspconfig</code> as well as
@@ -231,8 +282,8 @@
     find my Python libraries in a very simple project where I have a very
     simple <code>$PYTHONPATH</code>, <code>lib:../lib</code>, available in
     the environment.</p>
-    <h3 id="finally-making-progress-with-scala-again-2021-05-31">Finally
-    making progress with Scala again [2021-05-31]:</h3>
+    <h2 id="finally-making-progress-with-scala-again-2021-05-31">Finally
+    making progress with Scala again [2021-05-31]:</h2>
     <p>After 3 years of stagnating with Scala, I am finally making some
     forward progress. I have sorted out many of the various overloaded
     meanings of implicit in Scala 2, just in time for this to all change for
@@ -258,8 +309,8 @@
     <p>So, there seems to be no "standard" way to universally check the
     version of Scala you are running on at either run time or in the
     REPL.</p>
-    <h3 id="gnome-3-startup-behavior-2021-04-18">Gnome 3 Startup Behavior
-    [2021-04-18]:</h3>
+    <h2 id="gnome-3-startup-behavior-2021-04-18">Gnome 3 Startup Behavior
+    [2021-04-18]:</h2>
     <p>Recently I noticed that configuring Alacritty terminal emulator to
     start the fish shell caused environment variables to be defined which
     should not have been. Also the $PATH was badly munged. Making fish my
@@ -275,7 +326,7 @@
     <p>This sourcing behavior might come in handy, especially if I ever want
     to play around alternate $XDG_CONFIG_HOME configurations. Just wished I
     would have been given a heads up on this behavior.</p>
-    <h3 id="the-posix-shell-2020-11-12">The "POSIX Shell" [2020-11-12]:</h3>
+    <h2 id="the-posix-shell-2020-11-12">The "POSIX Shell" [2020-11-12]:</h2>
     <p>There is no such thing as the POSIX shell. POSIX shell is an
     IEEE/Open Group specification. The original AT&amp;T "Bourne Shell" is
     not a POSIX compliant shell. The POSIX Shell specification says what a
@@ -296,8 +347,8 @@
     against every possible Bourne descendant shell ever to have existed,
     unless one tests it against every possible Bourne descendant shell ever
     to have existed?</p>
-    <h3 id="shell-startup-in-historical-context-2020-07-28">Shell startup in
-    historical context [2020-07-28]:</h3>
+    <h2 id="shell-startup-in-historical-context-2020-07-28">Shell startup in
+    historical context [2020-07-28]:</h2>
     <p>Traditionally, a UNIX shell sets up an initial shell environment when
     logging into a system via a login shell. The shell would source a file
     like ~/.profile to establish an initial $PATH and export shell
@@ -358,8 +409,8 @@
     environment. I wish my command line and desktop environments to
     complement and interact with each other. I use shell environments to
     help manage my programming environments.</p>
-    <h3 id="does-microsoft-want-ignorant-end-users-2019-03-23">Does
-    Microsoft want ignorant end users? [2019-03-23]:</h3>
+    <h2 id="does-microsoft-want-ignorant-end-users-2019-03-23">Does
+    Microsoft want ignorant end users? [2019-03-23]:</h2>
     <p>Over the last 3 weeks I lost several days of effort getting an NVIDIA
     CUDA environment implemented on Windows 10 using Anaconda Python and the
     NVIDIA CUDA development kit. The OEM laptop had a NVIDIA Quadro M620
@@ -404,8 +455,8 @@
     stinks of the same "at all costs protect end-users from themselves"
     mentality that we see in Linux desktops environments where the terminal
     emulator is made very difficult for new end-users to find.</p>
-    <h3 id="in-the-name-of-posix-compliance-2019-03-17">In the name of POSIX
-    compliance [2019-03-17]:</h3>
+    <h2 id="in-the-name-of-posix-compliance-2019-03-17">In the name of POSIX
+    compliance [2019-03-17]:</h2>
     <p>On GNU/Linux, at least Arch Linux using the GNU glibc library, there
     is a trick used in /usr/include/bits/confname.h, included by
     /usr/include/unistd.h, to define the <code>_SC_*</code>,
@@ -444,9 +495,9 @@
     real modules will be coming to C sometime soon; its been 40 years too
     late. At least in C++ enumerations are typed. C needs better type
     safety.</p>
-    <h3
+    <h2
     id="advanced-programming-in-the-unix-environment-apue-2019-01-16">Advanced
-    Programming in the UNIX Environment (APUE) [2019-01-16]:</h3>
+    Programming in the UNIX Environment (APUE) [2019-01-16]:</h2>
     <p>I am making progress working my way through "Advanced Programming in
     the UNIX Environment" 3rd edition by W. Richard Stevens. The book has a
     website <a href="http://apuebook.com/">APUE</a> with source code, but
@@ -463,8 +514,8 @@
     </ul>
     <p>Currently I only have access to Linux based systems, but eventually
     wish to adapt to and test on other Unix like OS's.</p>
-    <h3 id="c-and-c-really-are-different-languages-2018-12-16">C and C++
-    really are different languages [2018-12-16]:</h3>
+    <h2 id="c-and-c-really-are-different-languages-2018-12-16">C and C++
+    really are different languages [2018-12-16]:</h2>
     <p>In one of my <a
     href="https://github.com/grscheller/scheller-linux-archive">scheller-linux-archives</a>
     GIT repo's README.md files, I recently waxed poetic on the related topic
@@ -510,8 +561,8 @@
     developed? Most certainly. Will a better, safer, language ever come
     along and replace C? Probably not in our lifetimes. C is "good enough"
     and the price to replace it "too high."</p>
-    <h3 id="linuxunixposix-systems-programming-2018-12-16">Linux/Unix/POSIX
-    Systems Programming [2018-12-16]:</h3>
+    <h2 id="linuxunixposix-systems-programming-2018-12-16">Linux/Unix/POSIX
+    Systems Programming [2018-12-16]:</h2>
     <p>I have always admired W. Richard Steven's books on Unix System
     programming. Back in the early to mid 1990's, I thought someday I would
     work my way through them. Well, I have finally gotten around to it, in
@@ -524,8 +575,8 @@
     is I am trying to replace. Thanks to the maturity and stability of the
     POSIX and X/Open standards, Steven's books are as relevant today as they
     were back in the 1990's.</p>
-    <h3 id="slowing-up-on-fp-in-scala-2018-03-01">Slowing up on FP in Scala
-    [2018-03-01]:</h3>
+    <h2 id="slowing-up-on-fp-in-scala-2018-03-01">Slowing up on FP in Scala
+    [2018-03-01]:</h2>
     <p>I having trouble in chapter 9, Parser Combinators in <a
     href="https://www.manning.com/books/functional-programming-in-scala">Functional
     Programming in Scala</a>. The concept of parsers is not the problem. It
@@ -539,8 +590,8 @@
     developing laws for a software design before it is even implemented, and
     then letting these laws guide the implementation, is something I will
     need to get much better at doing.</p>
-    <h3 id="markdown-rendering-errors-2017-11-08">Markdown rendering errors
-    [2017-11-08]:</h3>
+    <h2 id="markdown-rendering-errors-2017-11-08">Markdown rendering errors
+    [2017-11-08]:</h2>
     <p>I noticed that both pandoc and GitHub render markdown documents with
     HTML errors. Consider my GitHub repo's <a
     href="https://github.com/grscheller/scheller-linux-archive/blob/master/README.md">README.md</a>
@@ -555,7 +606,7 @@
     really that surprising. What I find utterly jaw dropping is the lack of
     information and/or interest on the Web regarding the existence of these
     types of errors!</p>
-    <h3 id="scala-implicits-2017-08-01">Scala Implicits [2017-08-01]:</h3>
+    <h2 id="scala-implicits-2017-08-01">Scala Implicits [2017-08-01]:</h2>
     <p>There's seems to be a big hole in my Scala toolbox,
     <strong>Implicits</strong>. I like to make everything explicit. I like
     code that you can reverse engineer easily. I don't like hunting all over
@@ -572,8 +623,8 @@
     techniques are not only much simpler, they come with a substantially
     less computational price. Supplying context should not require
     sequencing.</p>
-    <h3 id="my-evolution-as-a-fp-scala-developer-2017-07-02">My evolution as
-    a FP Scala Developer [2017-07-02]:</h3>
+    <h2 id="my-evolution-as-a-fp-scala-developer-2017-07-02">My evolution as
+    a FP Scala Developer [2017-07-02]:</h2>
     <ol type="1">
     <li>Using scala as a better java</li>
     <li>Mix of OOP + FP elements - avoiding vars and nulls</li>
@@ -590,8 +641,8 @@
     </ol>
     <p>Currently, I am somewhere between steps 6 and 7. I might go back and
     try Haskell again to help me tackle step 8.</p>
-    <h3 id="my-scala-programmer-background-2017-07-02">My Scala programmer
-    background [2017-07-02]:</h3>
+    <h2 id="my-scala-programmer-background-2017-07-02">My Scala programmer
+    background [2017-07-02]:</h2>
     <p>I don't come from a Java OOP background. Python run-time OOP allowed
     me to finally understand C++ style compile-time OOP. Professionally I
     have been able to apply these OOP skills to write very OOP MATLAB GUI
