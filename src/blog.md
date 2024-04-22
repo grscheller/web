@@ -563,7 +563,7 @@ to adapt to and test on other Unix like OS's.
 ## C and C++ really are different languages \[2018-12-16\]:
 
 In one of my
-[scheller-linux-archives](https://github.com/grscheller/scheller-linux-archive)
+[scheller-linux-archive](https://github.com/grscheller/scheller-linux-archive)
 GIT repo's README.md files, I recently waxed poetic on the related topic
 of C and C++ as "systems languages." I thought this blog might be
 a better place for this material.
