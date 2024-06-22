@@ -39,16 +39,16 @@
 |               |                             | one.one.one.one |
 | Control D     | Unfiltered/Privacy/Security | 76.76.2.0       |
 |               |                             | 76.76.10.0      |
-| ruad9         | Block Phishing/Malware      | 9.9.9.9         |
+| Quad9         | Block Phishing/Malware      | 9.9.9.9         |
 |               |                             | 149.112.112.112 |
-| AdGuard       | Block Ads                   | 94.140.14.14    |
+| AdGuard       | Family/Block Ads            | 94.140.14.15    |
+|               | Block Ads                   | 94.140.14.14    |
 |               |                             | 94.140.15.15    |
-|               | Family/Block Ads            | 94.140.14.15    |
 | Alternate DNS | Block Ads                   | 76.76.19.19     |
 |               |                             | 76.223.122.150  |
-| Yandex        | Basic Unfiltered            | 77.88.8.8       |
+| Yandex        | Basic/Unfiltered            | 77.88.8.8       |
 |               |                             | 77.88.8.1       |
-| Yandex        | Safe Security               | 77.88.8.88      |
+| Yandex        | Safe/Security               | 77.88.8.88      |
 |               |                             | 77.88.8.2       |
-| Yandex        | Family/Security             | 77.88.8.7       |
-| Yandex        | Family/Security             | 77.88.8.3       |
+|               | Family/Security             | 77.88.8.7       |
+|               |                             | 77.88.8.3       |
