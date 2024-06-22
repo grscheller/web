@@ -45,26 +45,26 @@ Names that when used as targets, change the behavior of Make.
 
 Notes on Built-in Targets:
 
-* `.PHONY`: an optimization and avoids conflict with real files of same name
-* `.INTERMEDIATE`: with no prerequisites has no effect
+* `.PHONY` - an optimization and avoids conflict with real files of same name
+* `.INTERMEDIATE` - with no prerequisites has no effect
   * intermediates are automatically deleted when no longer needed
-* `.SECONDARY`: with no prereqs causes all targets to be secondary
-* `.SECONDARYEXPANSION`: has no prereqs, applies to targets defined after it
+* `.SECONDARY` - with no prereqs causes all targets to be secondary
+* `.SECONDARYEXPANSION` - has no prereqs, applies to targets defined after it
   * can use automatic variables on second expansion
   * non trivial examples found [here][1]
-* `.IGNORE`: any recipe given with the .IGNORE target itself is ignored
-* `.LOW_RESOLUTION_TIME`: example low res time recipe is `cp -p $< $@`
-* `.SILENT`: GNU hippies say best practice is to not use this feature
-* `.EXPORT_ALL_VARIABLES`: no prerequisits
+* `.IGNORE` - any recipe given with the .IGNORE target itself is ignored
+* `.LOW_RESOLUTION_TIME` - example low res time recipe is `cp -p $< $@`
+* `.SILENT` - GNU hippies say best practice is to not use this feature
+* `.EXPORT_ALL_VARIABLES` - no prerequisits
   * another anti-pattern to avoid
   * `make -e` is similar, has caused me many hours of painful decovolution
-* `.NOTPARALLEL`: no prerequisites
+* `.NOTPARALLEL` - no prerequisites
   * usually used with recursive make builds
   * avoids race conditions between daughter make invocations
-* `.ONESHELL`: no prerequisites
+* `.ONESHELL` - no prerequisites
   * bad idea, global change is all or nothing
   * see [Automating Tasks](#automating-tasks) below to write oneliners
-* `.POSIX`: no prerequisites
+* `.POSIX` - no prerequisites
   * GNU Make extensions are still available
   * use POSIX behavior when it differs from GNU behavior
   * POSIX shells get past `-e` option
