@@ -146,7 +146,8 @@
 * Never mistake motion for action.
   * (Ernest Hemmingway)
 * Use motion to manipulate your opponents attention. Don't let him see the small step.
-* The greatest lesson in life is to know that even fools are right sometimes.(Winston Churchill)
+* The greatest lesson in life is to know that even fools are right sometimes.
+  * (Winston Churchill)
 * An appeaser is one who feeds a crocodile, hoping it will eat him last.
   * (Winston Churchill)
 * No man is justified in doing evil on the grounds of expediency.
@@ -392,3 +393,4 @@
 * Just because you know how to get drunk does not mean you know how to drink. 
 * Whiskey is for sipping, cowboys swallowed their whiskey in one gulp because they only had lousy whiskey.
 * A boilermaker is a way to destroy both a good beer and a good whiskey simultaneously.
+* To become fluent in a language, one must become familiar with the culture from which the language arose.  
