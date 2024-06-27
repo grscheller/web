@@ -34,11 +34,11 @@
 * Crude and Beautiful are not opposite ends of the spectrum, they meet at Subtly.
 * All straight lines are circles.
 * Emptiness can neutralizes, it redirects by receiving; Fullness too can redirect, but by giving, not opposing.
-* To be subtle you have to be gentle. Deemphasize all movement, take small steps.
+* To be subtle you have to be gentle: de-emphasize all movement, take small steps.
   * (Frank Hubbard)
 * Give your opponent the illusion that he has freedom of motion. Why grab him? He will "hold on" if he thinks he is in control.
 * Don't let the peasant make you bend over.
-* The better you are, the narrower your centerline. 
+* The better you are, the narrower your center line. 
 * Gun and knife defenses are for use against those who don't know how to wield their weapons. In general, knife beats fist, club beats knife, gun beats club. 
 * It is not Socialism vs Capitalism, but Socialism vs Monetarism. Capitalism is not a system, it is adjective reality; if you don't treat capital right, it will slap you.
 * Beware of claims of absolute truth, even from this statement.
@@ -130,7 +130,7 @@
 * Don't be stuck on stupid.
 * Ignorant means you haven't yet learned, stupid means you won't learn.
 * The only way you can learn anything in this business is from somebody who does not know what they can't do.
-  * (Gregg Toland - Direcor of Photography, Citizen Kane)
+  * (Gregg Toland - Director of Photography, Citizen Kane)
 * Golf is 90% mental, so long as you possess all of the remaining 10%.
   * (Tiger Wood's golf coach)
 * If you desire peace, prepare for war.
@@ -144,7 +144,7 @@
 * The only thing that saves us from bureaucracy is its inefficiency.
   * (Eugene McCarthy)
 * Never mistake motion for action.
-  * (Ernest Hemmingway)
+  * (Ernest Hemingway)
 * Use motion to manipulate your opponents attention. Don't let him see the small step.
 * The greatest lesson in life is to know that even fools are right sometimes.
   * (Winston Churchill)
@@ -384,7 +384,7 @@
   * Rich Hickey
 * Simplicity is a choice. We have a culture of complexity. Avoid tools, languages, constructs, etc. that generate complex outputs. Simple != easy. Look for complexity and avoid it. Reliability tools: testing, refactoring, and type systems are good but secondary. They do not enforce simplicity. They are just a safety net.
   * Rich Hickey
-* The real power of a data structure comes not from what it enables you to do, but from what it prevents you from doing to youeself.
+* The real power of a data structure comes not from what it enables you to do, but from what it prevents you from doing to yourself.
 * An object oriented programmer is someone who cannot define the word "function" without using the word "method" to do so.
 * Worry is the enemy of learning.
   * ThePrimeagen
