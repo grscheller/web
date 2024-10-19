@@ -394,3 +394,20 @@
 * Whiskey is for sipping, cowboys swallowed their whiskey in one gulp because they only had lousy whiskey.
 * A boilermaker is a way to destroy both a good beer and a good whiskey simultaneously.
 * To become fluent in a language, one must become familiar with the culture from which the language arose.  
+* Never learn a new computer language with a new problem.
+  * ThPrimeagen
+* It's not genius, it's experience from getting screwed.
+  * Casey Muritori
+* Designing software to be fast:
+  * make something work
+    * figure out:
+      * what really needs to be built
+      * what needs to be maintainable
+      * what needs to be fast
+  * make it right
+    * maintainable but not necessarily fast
+    * developed along with tests
+      * doubtful you can keep whole project in your head at one time
+    * write the developer docs along with the code
+      * best to keep both together (docstrings are great)
+  * then make it fast, but not at the expense of maintainability

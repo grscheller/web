@@ -1,14 +1,19 @@
 # grscheller/web GitHub Repo
 
-**GRScheller Software Development GitHub Page** content and the
-infrastructure used to maintain it.
+GRScheller web GitHub Page content and the infrastructure used to
+maintain it.
 
 ## Rendered GitHub Pages
 
 - [GRScheller GitHub Pages](https://grscheller.github.io/web)
   - [GRScheller Blog](https://grscheller.github.io/web/blog.html)
   - [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
+
+## Content hosted in GitHub repos
+  - [grscheller GitHub Landing Page](https://github.com/grscheller)
   - [grscheller namespace PyPI Projects](https://github.com/grscheller/grscheller-pypi-namespace-docs)
+  - [DNS Info](content/DNS_servers.md)
+  - [Wisdom](content/Wisdom.md)
 
 #### Public Domain Declaration
 
