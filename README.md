@@ -8,7 +8,7 @@ infrastructure used to maintain it.
 - [GRScheller GitHub Pages](https://grscheller.github.io/web)
   - [GRScheller Blog](https://grscheller.github.io/web/blog.html)
   - [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
-  - [grscheller PyPI Projects](https://grscheller.github.io/grscheller-pypi-namespace-docs/)
+  - [grscheller namespace PyPI Projects](https://github.com/grscheller/grscheller-pypi-namespace-docs)
 
 #### Public Domain Declaration
 
