@@ -7,9 +7,13 @@ in its source code tree.
 
 ### My PyPI Project Repositories:
 
-* [grscheller.boring-math](https://pypi.org/project/grscheller.boring-math)
-* [grscheller.circular-array](https://pypi.org/project/grscheller.circular-array)
-* [grscheller.datastructures](https://pypi.org/project/grscheller.datastructures)
+* [dtools.circular-array](https://pypi.org/project/dtools.circular-array)
+* [dtools.datastructures](https://pypi.org/project/dtools.datastructures)
+* [dtools.fp](https://pypi.org/project/dtools.fp)
+* [bm.integer-math](https://pypi.org/project/bm.integer-math)
+* [bm.probability-distributions](https://pypi.org/project/bm.probability-distributions)
+* [bm.pythagorean-triples](https://pypi.org/project/bm.pythagorean-triples)
+* [bm.recursive-functions](https://pypi.org/project/bm.recursive-functions)
 
 ### My GITHUB Repositories:
 
