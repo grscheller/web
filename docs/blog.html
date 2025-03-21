@@ -13,26 +13,10 @@
     <h1 id="grscheller-software-development-blog">GRScheller Software
     Development Blog</h1>
     <p>The GitHub Pages version of this Blog is still a work in progress.
-    For a better viewing experience, view the source code for ths blog <a
+    For a better viewing experience, view the source code for this blog <a
     href="https://github.com/grscheller/web/blob/main/src/blog.md">here</a>
-    in its source code tree.</p>
-    <h3 id="my-pypi-project">My PyPI Project:</h3>
-    <ul>
-    <li><a
-    href="https://pypi.org/project/bm.integer-math">bm.integer-math</a></li>
-    <li><a
-    href="https://pypi.org/project/bm.probability-distributions">bm.probability-distributions</a></li>
-    <li><a
-    href="https://pypi.org/project/bm.pythagorean-triples">bm.pythagorean-triples</a></li>
-    <li><a
-    href="https://pypi.org/project/bm.recursive-functions">bm.recursive-functions</a></li>
-    <li><a
-    href="https://pypi.org/project/dtools.circular-array">dtools.circular-array</a></li>
-    <li><a
-    href="https://pypi.org/project/dtools.datastructures">dtools.datastructures</a></li>
-    <li><a href="https://pypi.org/project/dtools.fp">dtools.fp</a></li>
-    </ul>
-    <h3 id="my-github-repositories">My GITHUB Repositories:</h3>
+    on GitHub.</p>
+    <h3 id="my-github-repositories">My GITHUB Repositories</h3>
     <ul>
     <li><a href="https://github.com/grscheller/dotfiles">dotfiles</a></li>
     <li><a
@@ -59,6 +43,22 @@
     <li><a
     href="https://github.com/grscheller/scheller-linux-archive">scheller-linux-archive</a></li>
     <li><a href="https://github.com/grscheller/web">web</a></li>
+    </ul>
+    <h3 id="my-pypi-projects">My PyPI Projects</h3>
+    <ul>
+    <li><a
+    href="https://pypi.org/project/bm.integer-math">bm.integer-math</a></li>
+    <li><a
+    href="https://pypi.org/project/bm.probability-distributions">bm.probability-distributions</a></li>
+    <li><a
+    href="https://pypi.org/project/bm.pythagorean-triples">bm.pythagorean-triples</a></li>
+    <li><a
+    href="https://pypi.org/project/bm.recursive-functions">bm.recursive-functions</a></li>
+    <li><a
+    href="https://pypi.org/project/dtools.circular-array">dtools.circular-array</a></li>
+    <li><a
+    href="https://pypi.org/project/dtools.datastructures">dtools.datastructures</a></li>
+    <li><a href="https://pypi.org/project/dtools.fp">dtools.fp</a></li>
     </ul>
     <h2 id="forgot-about-this-blog-again-2025-03-21">Forgot about this blog
     again [2025-03-21]</h2>
@@ -96,23 +96,21 @@
     Node.js. Actually it is not. The name "npm" does not even stand for node
     package manager. According to the <a
     href="https://github.com/npm/cli">npm/cli</a> GitHub repo README.md,</p>
-    <pre><code>
-        Contrary to popular belief, npm is not in fact an acronym for
+    <pre class="text"><code>    Contrary to popular belief, npm is not in fact an acronym for
         &quot;Node Package Manager&quot;; It is a recursive ba:wqcronymic abbreviation
         for &quot;npm is not an acronym&quot; (if the project was named &quot;ninaa&quot;,
         then it would be an acronym). The precursor to npm was actually
         a bash utility named &quot;pm&quot;, which was the shortform name of
         &quot;pkgmakeinst&quot; - a bash function that installed various things
         on various platforms. If npm were to ever have been considered
-        an acronym, it would be as &quot;node pm&quot; or, potentially &quot;new pm&quot;.
-    </code></pre>
+        an acronym, it would be as &quot;node pm&quot; or, potentially &quot;new pm&quot;.</code></pre>
     <p>After several hours of web searching mostly secondary,
     non-authoritative sources, this is what I found,</p>
     <ul>
     <li>Node.js maintained by the non-profit OpenJS Foundation
     <ul>
     <li>Node.js is a JavaScript framework</li>
-    <li>Node,js source code can be found <a
+    <li>Node.js source code can be found <a
     href="https://github.com/nodejs/node">here</a></li>
     </ul></li>
     <li>npm (the cmdline utility) is an open source package manager for
@@ -139,11 +137,9 @@
     <p>From this <a
     href="https://github.blog/2020-03-16-npm-is-joining-github/">GitHub
     blog</a> dated March 16, 2020",</p>
-    <pre><code>
-        Later this year, we will enable npm’s paying customers to move their
+    <pre class="text"><code>    Later this year, we will enable npm’s paying customers to move their
         private npm packages to GitHub Packages—allowing npm to exclusively
-        focus on being a great public registry for JavaScript.
-    </code></pre>
+        focus on being a great public registry for JavaScript.</code></pre>
     <p>Looks like npm (the repository) is Micro$oft's loss leader for
     private JavaScript package hosting. At least Google didn't buy npm.</p>
     <h2 id="added-a-lua-project-to-master-lua-2024-03-18">Added a Lua
@@ -340,13 +336,15 @@
     for where this is configured.</p>
     <p>Scala 3.0.0 reuses the same standard libraries as Scala 2.13.15. As
     an artifact of this, in the Scala 3.0.0 REPL</p>
-    <pre><code>   scala&gt; scala.util.Properties.versionString
-       val res1: String = version 2.13.5</code></pre>
+    <div class="sourceCode" id="cb3"><pre
+    class="sourceCode scala"><code class="sourceCode scala"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>   scala<span class="op">&gt;</span> scala<span class="op">.</span>util<span class="op">.</span><span class="ex">Properties</span><span class="op">.</span>versionString</span>
+    <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">val</span> res1<span class="op">:</span> <span class="ex">String</span> <span class="op">=</span> version <span class="dv">2</span><span class="op">.</span><span class="fl">13.5</span></span></code></pre></div>
     <p>This is due to this version string being defined in the 2.13.15
     standard library. In Scala 3.0.0, but not any of the out-of-the-box
     2.13.* versions,</p>
-    <pre><code>   scala&gt; dotty.tools.dotc.config.Properties.versionString
-       val res0: String = version 3.0.0</code></pre>
+    <div class="sourceCode" id="cb4"><pre
+    class="sourceCode scala"><code class="sourceCode scala"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>   scala<span class="op">&gt;</span> dotty<span class="op">.</span>tools<span class="op">.</span>dotc<span class="op">.</span>config<span class="op">.</span><span class="ex">Properties</span><span class="op">.</span>versionString</span>
+    <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">val</span> res0<span class="op">:</span> <span class="ex">String</span> <span class="op">=</span> version <span class="dv">3</span><span class="op">.</span><span class="fl">0.0</span></span></code></pre></div>
     <p>So, there seems to be no "standard" way to universally check the
     version of Scala you are running on at either run time or in the
     REPL.</p>
@@ -508,20 +506,21 @@
     implements them as enumerations, but then turns around and defines
     macros with the exact same names and values as the enumeration
     symbols.</p>
-    <pre><code>   enum
-         {
-           _PC_LINK_MAX,
-       #define _PC_LINK_MAX            _PC_LINK_MAX
-           _PC_MAX_CANON,
-       #define _PC_MAX_CANON           _PC_MAX_CANON
-           _PC_MAX_INPUT,
-       #define _PC_MAX_INPUT           _PC_MAX_INPUT
-            .
-            .
-            .
-           _PC_2_SYMLINKS
-       #define _PC_2_SYMLINKS          _PC_2_SYMLINKS
-         };</code></pre>
+    <div class="sourceCode" id="cb6"><pre
+    class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>   <span class="kw">enum</span></span>
+    <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>     <span class="op">{</span></span>
+    <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>       _PC_LINK_MAX<span class="op">,</span></span>
+    <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_LINK_MAX            </span>_PC_LINK_MAX</span>
+    <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>       _PC_MAX_CANON<span class="op">,</span></span>
+    <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_MAX_CANON           </span>_PC_MAX_CANON</span>
+    <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>       _PC_MAX_INPUT<span class="op">,</span></span>
+    <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_MAX_INPUT           </span>_PC_MAX_INPUT</span>
+    <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span></span>
+    <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span></span>
+    <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span></span>
+    <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>       _PC_2_SYMLINKS</span>
+    <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_2_SYMLINKS          </span>_PC_2_SYMLINKS</span>
+    <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>     <span class="op">};</span></span></code></pre></div>
     <p>Kinda silly, the sole purpose of these macros are just to meet the
     letter of the POSIX standard. I can think of no other purpose they could
     serve.</p>
