@@ -5,35 +5,60 @@ For a better viewing experience, view the source code for ths blog
 [here](https://github.com/grscheller/web/blob/main/src/blog.md)
 in its source code tree.
 
-### My PyPI Project Repositories:
+### My PyPI Project:
 
-* [dtools.circular-array](https://pypi.org/project/dtools.circular-array)
-* [dtools.datastructures](https://pypi.org/project/dtools.datastructures)
-* [dtools.fp](https://pypi.org/project/dtools.fp)
 * [bm.integer-math](https://pypi.org/project/bm.integer-math)
 * [bm.probability-distributions](https://pypi.org/project/bm.probability-distributions)
 * [bm.pythagorean-triples](https://pypi.org/project/bm.pythagorean-triples)
 * [bm.recursive-functions](https://pypi.org/project/bm.recursive-functions)
+* [dtools.circular-array](https://pypi.org/project/dtools.circular-array)
+* [dtools.datastructures](https://pypi.org/project/dtools.datastructures)
+* [dtools.fp](https://pypi.org/project/dtools.fp)
 
 ### My GITHUB Repositories:
 
 * [dotfiles](https://github.com/grscheller/dotfiles)
-* [boring-math](https://github.com/grscheller/boring-math)
-* [circular-array](https://github.com/grscheller/circular-array)
-* [datastructures](https://github.com/grscheller/datastructures)
+* [bm-integer-math](https://github.com/grscheller/bm-integer-math)
+* [bm-recursive-functions](https://github.com/grscheller/bm-recursive-functions)
+* [bm-probability-distributions](https://github.com/grscheller/bm-probability-distributions)
+* [bm-pythagorean-triples](https://github.com/grscheller/bm-pythagorean-triples)
+* [dtools-circular-array](https://github.com/grscheller/dtools-circular-array)
+* [dtools-datastructures](https://github.com/grscheller/dtools-datastructures)
+* [dtools-fp](https://github.com/grscheller/dtools-fp)
+* [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
 * [grok-lua](https://github.com/grscheller/grok-lua)
 * [grok-typescript](https://github.com/grscheller/grok-typescript)
-* [fpinScala3Stdlib](https://github.com/grscheller/fpinScala3Stdlib)
-* [neovim-notes](https://github.com/grscheller/neovim-notes)
 * [git-notes](https://github.com/grscheller/git-notes)
+* [neovim-notes](https://github.com/grscheller/neovim-notes)
 * [scheller-linux-archive](https://github.com/grscheller/scheller-linux-archive)
 * [web](https://github.com/grscheller/web)
 
-### My GitHub Pages:
+## Forgot about this blog again \[2025-03-21\]:
 
-* [PyPI grscheller Project Repos](https://grscheller.github.io/web/pypi_repos.html)
-* [GRScheller Bookmark Page](https://grscheller.github.io/web/bookmark.html)
-* [GRScheller Software Development Blog](https://grscheller.github.io/web/blog.html)
+I updated my Repo links at the top of the page. I'll try and commit to
+adding posts at least once per week.
+
+Some of the things I been up to are
+
+- Retired my PyPI grscheller namespace projects, rolled content into
+  - Boring Math PyPI repos
+    - bm.integer-math - morphing into a number theory hobby project
+    - bm.probability-distributions - might be useful someday
+    - bm.pythagorean-triples - more educational than practical
+    - bm.recursive-functions - stack-safe techniques for Python
+  - Developer Tools repos
+    - dtools-datastructures - mostly experimental
+    - dtools-circular-array - an actually useful data structure
+    - dtools-fp - pythonic functional programming tools
+
+Created two repos to learn Lua and TypeScript
+
+- grok-lua
+- grok-typescript
+
+Migrated off Arch Linux. Now running Pop!OS 24.04 LTS x86_64 as
+a rolling release (currently at Alpha 6). COSMIC Desktop in tiling mode
+is very I3/Sway like.
 
 ## Node.js vs npm \[2024-03-19\]:
 
