@@ -67,19 +67,18 @@ Node.js. Actually it is not. The name "npm" does not even stand for
 node package manager. According to the
 [npm/cli](https://github.com/npm/cli) GitHub repo README.md,
 
-### From npm/cli README.md
+#### From npm/cli README.md
 
-Contrary to popular belief, npm is not in fact an acronym for
-"Node Package Manager"; It is a recursive ba:wqcronymic abbreviation
-for "npm is not an acronym" (if the project was named "ninaa",
+"Contrary to popular belief, npm is not in fact an acronym for
+'Node Package Manager'; It is a recursive bacronymic abbreviation
+for 'npm is not an acronym' (if the project was named 'ninaa',
 then it would be an acronym). The precursor to npm was actually
-a bash utility named "pm", which was the shortform name of
-"pkgmakeinst" - a bash function that installed various things
+a bash utility named 'pm', which was the shortform name of
+'pkgmakeinst' - a bash function that installed various things
 on various platforms. If npm were to ever have been considered
-an acronym, it would be as "node pm" or, potentially "new pm".
+an acronym, it would be as 'node pm' or, potentially 'new pm'."
 
-After several hours of web searching mostly secondary,
-non-authoritative sources, this is what I found,
+#### After several hours of web searching
 
 - Node.js maintained by the non-profit OpenJS Foundation
   - Node.js is a JavaScript framework
@@ -92,9 +91,10 @@ non-authoritative sources, this is what I found,
 - npm (the registry) is a service "to the community" provided by GitHub
   - this service is branded npm
 
-"Authoritative" sources like GitHub, Microsoft, and all 342 npm GitHub
-repos are vague regarding the corporate ownership structure. When
-I tried to research this through Dun & Bradstreet I hit a paywall.
+I searched mostly secondary, non-authoritative sources. "Authoritative"
+sources like GitHub, Microsoft, and all 342 npm GitHub repos are vague
+regarding the corporate ownership structure. When I tried to research
+this through Dun & Bradstreet I hit a paywall.
 
 From this
 [GitHub blog](https://github.blog/2020-03-16-npm-is-joining-github/),
@@ -326,7 +326,7 @@ looking for where this is configured.
 Scala 3.0.0 reuses the same standard libraries as Scala 2.13.15. As an
 artifact of this, in the Scala 3.0.0 REPL
 
-```scala
+```
     scala> scala.util.Properties.versionString
     val res1: String = version 2.13.5
 ```
@@ -335,7 +335,7 @@ This is due to this version string being defined in the 2.13.15 standard
 library. In Scala 3.0.0, but not any of the out-of-the-box 2.13.\*
 versions,
 
-```scala
+```
     scala> dotty.tools.dotc.config.Properties.versionString
     val res0: String = version 3.0.0
 ```
@@ -356,8 +356,8 @@ was causing this.
 GDM __NON-INTERACTIVELY__ sources my `~/.profile` with /etc/gdm/Xsession
 using /bin/sh during the Gnome3 startup process!!! Now, ~/.profile is
 supposed to be sourced only by interactive shells. Fixed the problem by
-putting an interactive shell test in ~/.profile, like I have in my
-~/.bashrc and ~/.shrc files.
+putting an interactive shell test in `~/.profile`, like I have in my
+`~/.bashrc` and `~/.shrc` files.
 
 This sourcing behavior might come in handy, especially if I ever want to
 play around alternate $XDG_CONFIG_HOME configurations. Just wished
@@ -368,9 +368,9 @@ I would have been given a heads up on this behavior.
 There is no such thing as the POSIX shell. POSIX shell is an IEEE/Open
 Group specification. The original AT&T "Bourne Shell" is not a POSIX
 compliant shell. The POSIX Shell specification says what a POSIX
-compliant shell must do when given a __POSIX complient__ script. The
+compliant shell must do when given a __POSIX compliant__ script. The
 specification does not say what a POSIX compliant shell should do, or
-not do, when given a non-POSIX complient script. A shell running in
+not do, when given a non-POSIX compliant script. A shell running in
 strict POSIX compatibility mode is only limited to what it can do when
 given a POSIX compliant feature. If a script runs on one POSIX compliant
 shell, there is no guarantee that it will run on another POSIX compliant
@@ -392,14 +392,14 @@ shell ever to have existed?
 
 Traditionally, a UNIX shell sets up an initial shell environment when
 logging into a system via a login shell. The shell would source a file
-like ~/.profile to establish an initial $PATH and export shell
+like `~/.profile` to establish an initial `$PATH` and export shell
 variables. Then it would source a file referenced by the environment
-variable $ENV, typically ~/.shrc or ~/.shinit, to pick up shell
+variable `$ENV`, typically `~/.shrc` or `~/.shinit`, to pick up shell
 functions and aliases.
 
 Aliases and shell functions are not exported to the environment but are
 picked up afresh with each new shell session via sourcing config files
-like ~/.bashrc. (Actually, shell functions can be exported to the
+like `~/.bashrc`. (Actually, shell functions can be exported to the
 environment, but this is not typically what is done). By shell session,
 I am talking about a completely new instance of the shell, not just
 a subshell.
@@ -410,10 +410,10 @@ X-session. X-Windows is already running under root and a user owned
 Session Manager sets up the Desktop Environment. From this environment,
 client programs, including terminal emulators, can be launched. The user
 is "logged" into the X-Session, __not__ a login shell. As a result,
-.profile does not get sourced.
+`.profile` does not get sourced.
 
-Why not just use .bashrc to configure an initial Bash environment? The
-problem is is that .bashrc will force __every__ bash shell to the
+Why not just use `.bashrc` to configure an initial Bash environment? The
+problem is is that `.bashrc` will force __every__ bash shell to the
 __exact same__ configuration, not just the first initial shell in
 a terminal window.
 
@@ -438,21 +438,21 @@ X-Windows server. Back then I think the Window Manager doubled as the
 Session Manager, but I could be wrong.
 
 You see the pattern? Configure your initial environment with .profile
-and used .kshrc to configure aliases and functions. (Back then I only
+and used `.kshrc` to configure aliases and functions. (Back then I only
 used functions in shell scripts and never used aliases at all - I may
-not have even known about .kshrc) One file to establish a baseline
+not have even known about `.kshrc`) One file to establish a baseline
 environment for the initial shell invocation, and another to configure
 shell behaviors which stayed consistent across all subsequent shell
 invocations.
 
 So, to correctly configure an initial shell environment, I put a hooks
-in my .rc files to source a file called `.envrc` to set up the initial
-environment if this had not aleady been done. My .profile also sources
+in my `.rc files` to source a file called `.envrc` to set up the initial
+environment if this had not already been done. My .profile also sources
 this file.
 
-No shell variables get "exported" in my rc files. Don't need to unless
-I wanted programs other than the shell to see them. In that case it
-would be better to put such exports in my surrogate for .profile,
+No shell variables get "exported" in my `.rc files`. Don't need to
+unless I wanted programs other than the shell to see them. In that case
+it would be better to put such exports in my surrogate for `.profile`,
 `.envrc`.
 
 I see the desktop environment as an extension to the command line
@@ -493,15 +493,17 @@ happen, typed Device Manager into the Start Menu. Lo and behold, good
 old Device Manager launched. With an "!" point on the icon for the
 NVIDIA card. Drilling down on the icon I discover an error message:
 
-```text
-    Windows cannot verify the digital signature for the drivers
+#### Error Message
+
+"Windows cannot verify the digital signature for the drivers
 required for this device. A recent hardware or software
 change might have installed a file that is signed
 incorrectly or damaged, or that might be malicious
-software from an unknown source. (Code 52)
-```
+software from an unknown source. (Code 52)"
 
-Some web searching on this terminology and "Code 52" identified the
+#### After some web searching
+
+I found this terminology and "Code 52" identified the
 problem, Windows was using Secure Boot to "blacklist" the NVIDIA drivers
 I installed.
 
@@ -529,7 +531,7 @@ as C preprocessor macros. GNU/Linux implements them as enumerations, but
 then turns around and defines macros with the exact same names and
 values as the enumeration symbols.
 
-```cpp
+```
    enum
      {
        _PC_LINK_MAX,

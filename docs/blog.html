@@ -156,21 +156,20 @@
       package manager. According to the
       <a href="https://github.com/npm/cli">npm/cli</a> GitHub repo README.md,
     </p>
-    <h3 id="from-npmcli-readmemd">From npm/cli README.md</h3>
+    <h4 id="from-npmcli-readmemd">From npm/cli README.md</h4>
     <p>
-      Contrary to popular belief, npm is not in fact an acronym for "Node
-      Package Manager"; It is a recursive ba:wqcronymic abbreviation for "npm is
-      not an acronym" (if the project was named "ninaa", then it would be an
-      acronym). The precursor to npm was actually a bash utility named "pm",
-      which was the shortform name of "pkgmakeinst" - a bash function that
+      "Contrary to popular belief, npm is not in fact an acronym for 'Node
+      Package Manager'; It is a recursive bacronymic abbreviation for 'npm is
+      not an acronym' (if the project was named 'ninaa', then it would be an
+      acronym). The precursor to npm was actually a bash utility named 'pm',
+      which was the shortform name of 'pkgmakeinst' - a bash function that
       installed various things on various platforms. If npm were to ever have
-      been considered an acronym, it would be as "node pm" or, potentially "new
-      pm".
+      been considered an acronym, it would be as 'node pm' or, potentially 'new
+      pm'."
     </p>
-    <p>
-      After several hours of web searching mostly secondary, non-authoritative
-      sources, this is what I found,
-    </p>
+    <h4 id="after-several-hours-of-web-searching">
+      After several hours of web searching
+    </h4>
     <ul>
       <li>
         Node.js maintained by the non-profit OpenJS Foundation
@@ -206,9 +205,10 @@
       </li>
     </ul>
     <p>
-      "Authoritative" sources like GitHub, Microsoft, and all 342 npm GitHub
-      repos are vague regarding the corporate ownership structure. When I tried
-      to research this through Dun &amp; Bradstreet I hit a paywall.
+      I searched mostly secondary, non-authoritative sources. "Authoritative"
+      sources like GitHub, Microsoft, and all 342 npm GitHub repos are vague
+      regarding the corporate ownership structure. When I tried to research this
+      through Dun &amp; Bradstreet I hit a paywall.
     </p>
     <p>
       From this
@@ -503,23 +503,15 @@
       Scala 3.0.0 reuses the same standard libraries as Scala 2.13.15. As an
       artifact of this, in the Scala 3.0.0 REPL
     </p>
-    <div class="sourceCode" id="cb1">
-      <pre
-        class="sourceCode scala"
-      ><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>    scala<span class="op">&gt;</span> scala<span class="op">.</span>util<span class="op">.</span><span class="ex">Properties</span><span class="op">.</span>versionString</span>
-    <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">val</span> res1<span class="op">:</span> <span class="ex">String</span> <span class="op">=</span> version <span class="dv">2</span><span class="op">.</span><span class="fl">13.5</span></span></code></pre>
-    </div>
+    <pre><code>    scala&gt; scala.util.Properties.versionString
+        val res1: String = version 2.13.5</code></pre>
     <p>
       This is due to this version string being defined in the 2.13.15 standard
       library. In Scala 3.0.0, but not any of the out-of-the-box 2.13.*
       versions,
     </p>
-    <div class="sourceCode" id="cb2">
-      <pre
-        class="sourceCode scala"
-      ><code class="sourceCode scala"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    scala<span class="op">&gt;</span> dotty<span class="op">.</span>tools<span class="op">.</span>dotc<span class="op">.</span>config<span class="op">.</span><span class="ex">Properties</span><span class="op">.</span>versionString</span>
-    <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">val</span> res0<span class="op">:</span> <span class="ex">String</span> <span class="op">=</span> version <span class="dv">3</span><span class="op">.</span><span class="fl">0.0</span></span></code></pre>
-    </div>
+    <pre><code>    scala&gt; dotty.tools.dotc.config.Properties.versionString
+        val res0: String = version 3.0.0</code></pre>
     <p>
       So, there seems to be no "standard" way to universally check the version
       of Scala you are running on at either run time or in the REPL.
@@ -541,7 +533,8 @@
       <code>~/.profile</code> with /etc/gdm/Xsession using /bin/sh during the
       Gnome3 startup process!!! Now, ~/.profile is supposed to be sourced only
       by interactive shells. Fixed the problem by putting an interactive shell
-      test in ~/.profile, like I have in my ~/.bashrc and ~/.shrc files.
+      test in <code>~/.profile</code>, like I have in my
+      <code>~/.bashrc</code> and <code>~/.shrc</code> files.
     </p>
     <p>
       This sourcing behavior might come in handy, especially if I ever want to
@@ -553,9 +546,9 @@
       There is no such thing as the POSIX shell. POSIX shell is an IEEE/Open
       Group specification. The original AT&amp;T "Bourne Shell" is not a POSIX
       compliant shell. The POSIX Shell specification says what a POSIX compliant
-      shell must do when given a <strong>POSIX complient</strong> script. The
+      shell must do when given a <strong>POSIX compliant</strong> script. The
       specification does not say what a POSIX compliant shell should do, or not
-      do, when given a non-POSIX complient script. A shell running in strict
+      do, when given a non-POSIX compliant script. A shell running in strict
       POSIX compatibility mode is only limited to what it can do when given a
       POSIX compliant feature. If a script runs on one POSIX compliant shell,
       there is no guarantee that it will run on another POSIX compliant shell.
@@ -580,17 +573,19 @@
     <p>
       Traditionally, a UNIX shell sets up an initial shell environment when
       logging into a system via a login shell. The shell would source a file
-      like ~/.profile to establish an initial $PATH and export shell variables.
-      Then it would source a file referenced by the environment variable $ENV,
-      typically ~/.shrc or ~/.shinit, to pick up shell functions and aliases.
+      like <code>~/.profile</code> to establish an initial
+      <code>$PATH</code> and export shell variables. Then it would source a file
+      referenced by the environment variable <code>$ENV</code>, typically
+      <code>~/.shrc</code> or <code>~/.shinit</code>, to pick up shell functions
+      and aliases.
     </p>
     <p>
       Aliases and shell functions are not exported to the environment but are
       picked up afresh with each new shell session via sourcing config files
-      like ~/.bashrc. (Actually, shell functions can be exported to the
-      environment, but this is not typically what is done). By shell session, I
-      am talking about a completely new instance of the shell, not just a
-      subshell.
+      like <code>~/.bashrc</code>. (Actually, shell functions can be exported to
+      the environment, but this is not typically what is done). By shell
+      session, I am talking about a completely new instance of the shell, not
+      just a subshell.
     </p>
     <p>
       This worked well until the age of Display Managers. A Display Manager is
@@ -598,13 +593,14 @@
       is already running under root and a user owned Session Manager sets up the
       Desktop Environment. From this environment, client programs, including
       terminal emulators, can be launched. The user is "logged" into the
-      X-Session, <strong>not</strong> a login shell. As a result, .profile does
-      not get sourced.
+      X-Session, <strong>not</strong> a login shell. As a result,
+      <code>.profile</code> does not get sourced.
     </p>
     <p>
-      Why not just use .bashrc to configure an initial Bash environment? The
-      problem is is that .bashrc will force <strong>every</strong> bash shell to
-      the <strong>exact same</strong> configuration, not just the first initial
+      Why not just use <code>.bashrc</code> to configure an initial Bash
+      environment? The problem is is that <code>.bashrc</code> will force
+      <strong>every</strong> bash shell to the
+      <strong>exact same</strong> configuration, not just the first initial
       shell in a terminal window.
     </p>
     <p>
@@ -631,23 +627,24 @@
     </p>
     <p>
       You see the pattern? Configure your initial environment with .profile and
-      used .kshrc to configure aliases and functions. (Back then I only used
-      functions in shell scripts and never used aliases at all - I may not have
-      even known about .kshrc) One file to establish a baseline environment for
-      the initial shell invocation, and another to configure shell behaviors
-      which stayed consistent across all subsequent shell invocations.
+      used <code>.kshrc</code> to configure aliases and functions. (Back then I
+      only used functions in shell scripts and never used aliases at all - I may
+      not have even known about <code>.kshrc</code>) One file to establish a
+      baseline environment for the initial shell invocation, and another to
+      configure shell behaviors which stayed consistent across all subsequent
+      shell invocations.
     </p>
     <p>
       So, to correctly configure an initial shell environment, I put a hooks in
-      my .rc files to source a file called <code>.envrc</code> to set up the
-      initial environment if this had not aleady been done. My .profile also
-      sources this file.
+      my <code>.rc files</code> to source a file called <code>.envrc</code> to
+      set up the initial environment if this had not already been done. My
+      .profile also sources this file.
     </p>
     <p>
-      No shell variables get "exported" in my rc files. Don't need to unless I
-      wanted programs other than the shell to see them. In that case it would be
-      better to put such exports in my surrogate for .profile,
-      <code>.envrc</code>.
+      No shell variables get "exported" in my <code>.rc files</code>. Don't need
+      to unless I wanted programs other than the shell to see them. In that case
+      it would be better to put such exports in my surrogate for
+      <code>.profile</code>, <code>.envrc</code>.
     </p>
     <p>
       I see the desktop environment as an extension to the command line
@@ -691,17 +688,17 @@
       launched. With an "!" point on the icon for the NVIDIA card. Drilling down
       on the icon I discover an error message:
     </p>
-    <pre
-      class="text"
-    ><code>    Windows cannot verify the digital signature for the drivers
-    required for this device. A recent hardware or software
-    change might have installed a file that is signed
-    incorrectly or damaged, or that might be malicious
-    software from an unknown source. (Code 52)</code></pre>
+    <h4 id="error-message">Error Message</h4>
     <p>
-      Some web searching on this terminology and "Code 52" identified the
-      problem, Windows was using Secure Boot to "blacklist" the NVIDIA drivers I
-      installed.
+      "Windows cannot verify the digital signature for the drivers required for
+      this device. A recent hardware or software change might have installed a
+      file that is signed incorrectly or damaged, or that might be malicious
+      software from an unknown source. (Code 52)"
+    </p>
+    <h4 id="after-some-web-searching">After some web searching</h4>
+    <p>
+      I found this terminology and "Code 52" identified the problem, Windows was
+      using Secure Boot to "blacklist" the NVIDIA drivers I installed.
     </p>
     <p>
       After going into the UEFI and turning off Secure Boot, pyTorch worked
@@ -733,24 +730,20 @@
       implements them as enumerations, but then turns around and defines macros
       with the exact same names and values as the enumeration symbols.
     </p>
-    <div class="sourceCode" id="cb4">
-      <pre
-        class="sourceCode cpp"
-      ><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>   <span class="kw">enum</span></span>
-    <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>     <span class="op">{</span></span>
-    <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>       _PC_LINK_MAX<span class="op">,</span></span>
-    <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_LINK_MAX            </span>_PC_LINK_MAX</span>
-    <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>       _PC_MAX_CANON<span class="op">,</span></span>
-    <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_MAX_CANON           </span>_PC_MAX_CANON</span>
-    <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>       _PC_MAX_INPUT<span class="op">,</span></span>
-    <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_MAX_INPUT           </span>_PC_MAX_INPUT</span>
-    <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span></span>
-    <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span></span>
-    <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="op">.</span></span>
-    <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>       _PC_2_SYMLINKS</span>
-    <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>   <span class="pp">#define _PC_2_SYMLINKS          </span>_PC_2_SYMLINKS</span>
-    <span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>     <span class="op">};</span></span></code></pre>
-    </div>
+    <pre><code>   enum
+         {
+           _PC_LINK_MAX,
+       #define _PC_LINK_MAX            _PC_LINK_MAX
+           _PC_MAX_CANON,
+       #define _PC_MAX_CANON           _PC_MAX_CANON
+           _PC_MAX_INPUT,
+       #define _PC_MAX_INPUT           _PC_MAX_INPUT
+            .
+            .
+            .
+           _PC_2_SYMLINKS
+       #define _PC_2_SYMLINKS          _PC_2_SYMLINKS
+         };</code></pre>
     <p>
       Kinda silly, the sole purpose of these macros are just to meet the letter
       of the POSIX standard. I can think of no other purpose they could serve.
