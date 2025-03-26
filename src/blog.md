@@ -35,6 +35,14 @@ on GitHub.
 - [dtools.datastructures](https://pypi.org/project/dtools.datastructures)
 - [dtools.fp](https://pypi.org/project/dtools.fp)
 
+## 2025-03-XX: Reducing the gap
+
+I have been giving this blog a little love by reducing the gap between
+Pandoc and GitHub rendered Markdown. The GitHub rendered version is
+still substantially better, but I am getting closer. 
+
+Next step will be to see what I can do by tweaking style/blog.css file.
+
 ## 2025-03-21: Forgot about this blog again
 
 I updated my Repo links at the top of the page. I'll try and commit to
@@ -52,11 +60,6 @@ Some of the things I been up to are
     - dtools-datastructures - mostly experimental
     - dtools-circular-array - an actually useful data structure
     - dtools-fp - pythonic functional programming tools
-
-Created two repos to learn Lua and TypeScript
-
-- grok-lua
-- grok-typescript
 
 Migrated off Arch Linux. Now running Pop!OS 24.04 LTS x86_64 as
 a rolling release (currently at Alpha 6). COSMIC Desktop in tiling mode
@@ -80,7 +83,7 @@ a bash utility named 'pm', which was the shortform name of
 on various platforms. If npm were to ever have been considered
 an acronym, it would be as 'node pm' or, potentially 'new pm'."
 
-#### After several hours of web searching
+### After several hours of web searching
 
 - Node.js maintained by the non-profit OpenJS Foundation
   - Node.js is a JavaScript framework
@@ -98,16 +101,16 @@ sources like GitHub, Microsoft, and all 342 npm GitHub repos are vague
 regarding the corporate ownership structure. When I tried to research
 this through Dun & Bradstreet I hit a paywall.
 
-From this
-[GitHub blog](https://github.blog/2020-03-16-npm-is-joining-github/),
+### NPM GitHub blog post from 2020-03-26
 
-### Blog post from 26 Mar 2020
-
-Later this year, we will enable npm’s paying customers to move their
+"Later this year, we will enable npm’s paying customers to move their
 private npm packages to GitHub Packages—allowing npm to exclusively
-focus on being a great public registry for JavaScript.
+focus on being a great public registry for JavaScript."
 
-Looks like npm (the repository) is Micro$oft's loss leader for private
+I found this blog posting 
+[here](https://github.blog/2020-03-16-npm-is-joining-github/),
+
+Looks like npm (the repository) is Microsoft's loss leader for private
 JavaScript package hosting. At least Google didn't buy npm.
 
 ## 2024-03-18: Added a Lua project to master Lua
