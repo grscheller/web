@@ -67,16 +67,16 @@ Node.js. Actually it is not. The name "npm" does not even stand for
 node package manager. According to the
 [npm/cli](https://github.com/npm/cli) GitHub repo README.md,
 
-```text
-    Contrary to popular belief, npm is not in fact an acronym for
-    "Node Package Manager"; It is a recursive ba:wqcronymic abbreviation
-    for "npm is not an acronym" (if the project was named "ninaa",
-    then it would be an acronym). The precursor to npm was actually
-    a bash utility named "pm", which was the shortform name of
-    "pkgmakeinst" - a bash function that installed various things
-    on various platforms. If npm were to ever have been considered
-    an acronym, it would be as "node pm" or, potentially "new pm".
-```
+### From npm/cli README.md
+
+Contrary to popular belief, npm is not in fact an acronym for
+"Node Package Manager"; It is a recursive ba:wqcronymic abbreviation
+for "npm is not an acronym" (if the project was named "ninaa",
+then it would be an acronym). The precursor to npm was actually
+a bash utility named "pm", which was the shortform name of
+"pkgmakeinst" - a bash function that installed various things
+on various platforms. If npm were to ever have been considered
+an acronym, it would be as "node pm" or, potentially "new pm".
 
 After several hours of web searching mostly secondary,
 non-authoritative sources, this is what I found,
@@ -97,14 +97,13 @@ repos are vague regarding the corporate ownership structure. When
 I tried to research this through Dun & Bradstreet I hit a paywall.
 
 From this
-[GitHub blog](https://github.blog/2020-03-16-npm-is-joining-github/)
-dated March 16, 2020",
+[GitHub blog](https://github.blog/2020-03-16-npm-is-joining-github/),
 
-```text
-    Later this year, we will enable npm’s paying customers to move their
-    private npm packages to GitHub Packages—allowing npm to exclusively
-    focus on being a great public registry for JavaScript.
-```
+### Blog post from 26 Mar 2020
+
+Later this year, we will enable npm’s paying customers to move their
+private npm packages to GitHub Packages—allowing npm to exclusively
+focus on being a great public registry for JavaScript.
 
 Looks like npm (the repository) is Micro$oft's loss leader for private
 JavaScript package hosting. At least Google didn't buy npm.
@@ -328,8 +327,8 @@ Scala 3.0.0 reuses the same standard libraries as Scala 2.13.15. As an
 artifact of this, in the Scala 3.0.0 REPL
 
 ```scala
-   scala> scala.util.Properties.versionString
-   val res1: String = version 2.13.5
+    scala> scala.util.Properties.versionString
+    val res1: String = version 2.13.5
 ```
 
 This is due to this version string being defined in the 2.13.15 standard
@@ -337,8 +336,8 @@ library. In Scala 3.0.0, but not any of the out-of-the-box 2.13.\*
 versions,
 
 ```scala
-   scala> dotty.tools.dotc.config.Properties.versionString
-   val res0: String = version 3.0.0
+    scala> dotty.tools.dotc.config.Properties.versionString
+    val res0: String = version 3.0.0
 ```
 
 So, there seems to be no "standard" way to universally check the version
