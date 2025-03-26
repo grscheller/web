@@ -503,15 +503,25 @@
       Scala 3.0.0 reuses the same standard libraries as Scala 2.13.15. As an
       artifact of this, in the Scala 3.0.0 REPL
     </p>
-    <pre><code>    scala&gt; scala.util.Properties.versionString
-        val res1: String = version 2.13.5</code></pre>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode scala"
+      ><code class="sourceCode scala"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    scala<span class="op">&gt;</span> scala<span class="op">.</span>util<span class="op">.</span><span class="ex">Properties</span><span class="op">.</span>versionString</span>
+    <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">val</span> res1<span class="op">:</span> <span class="ex">String</span> <span class="op">=</span> version <span class="dv">2</span><span class="op">.</span><span class="fl">13.5</span></span></code></pre>
+    </div>
     <p>
       This is due to this version string being defined in the 2.13.15 standard
       library. In Scala 3.0.0, but not any of the out-of-the-box 2.13.*
       versions,
     </p>
-    <pre><code>    scala&gt; dotty.tools.dotc.config.Properties.versionString
-        val res0: String = version 3.0.0</code></pre>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode scala"
+      ><code class="sourceCode scala"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+    <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    scala<span class="op">&gt;</span> dotty<span class="op">.</span>tools<span class="op">.</span>dotc<span class="op">.</span>config<span class="op">.</span><span class="ex">Properties</span><span class="op">.</span>versionString</span>
+    <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">val</span> res0<span class="op">:</span> <span class="ex">String</span> <span class="op">=</span> version <span class="dv">3</span><span class="op">.</span><span class="fl">0.0</span></span></code></pre>
+    </div>
     <p>
       So, there seems to be no "standard" way to universally check the version
       of Scala you are running on at either run time or in the REPL.
@@ -730,7 +740,8 @@
       implements them as enumerations, but then turns around and defines macros
       with the exact same names and values as the enumeration symbols.
     </p>
-    <pre><code>   enum
+    <pre><code>
+       enum
          {
            _PC_LINK_MAX,
        #define _PC_LINK_MAX            _PC_LINK_MAX
@@ -743,7 +754,8 @@
             .
            _PC_2_SYMLINKS
        #define _PC_2_SYMLINKS          _PC_2_SYMLINKS
-         };</code></pre>
+         };
+    </code></pre>
     <p>
       Kinda silly, the sole purpose of these macros are just to meet the letter
       of the POSIX standard. I can think of no other purpose they could serve.

@@ -326,18 +326,22 @@ looking for where this is configured.
 Scala 3.0.0 reuses the same standard libraries as Scala 2.13.15. As an
 artifact of this, in the Scala 3.0.0 REPL
 
-```
+```scala
+
     scala> scala.util.Properties.versionString
     val res1: String = version 2.13.5
+
 ```
 
 This is due to this version string being defined in the 2.13.15 standard
 library. In Scala 3.0.0, but not any of the out-of-the-box 2.13.\*
 versions,
 
-```
+```scala
+
     scala> dotty.tools.dotc.config.Properties.versionString
     val res0: String = version 3.0.0
+
 ```
 
 So, there seems to be no "standard" way to universally check the version
@@ -532,6 +536,7 @@ then turns around and defines macros with the exact same names and
 values as the enumeration symbols.
 
 ```
+
    enum
      {
        _PC_LINK_MAX,
@@ -546,6 +551,7 @@ values as the enumeration symbols.
        _PC_2_SYMLINKS
    #define _PC_2_SYMLINKS          _PC_2_SYMLINKS
      };
+
 ```
 
 Kinda silly, the sole purpose of these macros are just to meet the
