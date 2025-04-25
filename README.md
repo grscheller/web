@@ -1,7 +1,6 @@
 # grscheller/web GitHub Repo
 
-GRScheller web GitHub Page content and the infrastructure used to
-maintain it.
+GRScheller web GitHub Page. Content and infrastructure.
 
 ## Rendered GitHub Pages
 
