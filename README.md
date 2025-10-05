@@ -12,7 +12,6 @@ GRScheller web GitHub Page. Content and infrastructure.
   - [grscheller GitHub Landing Page](https://github.com/grscheller)
   - [grscheller namespace PyPI Projects](https://github.com/grscheller/grscheller-pypi-namespace-docs)
   - [DNS Info](content/DNS_servers.md)
-  - [Wisdom](content/Wisdom.md)
 
 #### Public Domain Declaration
 
